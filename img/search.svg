@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>iconmonstr-magnifier-3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-1157.000000, -39.000000)" fill-rule="nonzero" fill="#000000">
+            <g id="Hoofdmenu">
+                <g id="Group-5" transform="translate(1084.000000, 39.000000)">
+                    <g id="Group-4">
+                        <g id="iconmonstr-magnifier-3" transform="translate(73.000000, 0.000000)">
+                            <path d="M6.90825919,13.7175 C3.09946282,13.7175 0,10.641 0,6.85875 C0,3.0765 3.09946282,0 6.90825919,0 C10.7170556,0 13.8165184,3.07725 13.8165184,6.85875 C13.8165184,10.64025 10.717811,13.7175 6.90825919,13.7175 Z M6.90825919,2.34225 C4.39952996,2.34225 2.35915729,4.36875 2.35915729,6.85875 C2.35915729,9.34875 4.40028538,11.37525 6.90825919,11.37525 C9.416233,11.37525 11.4581165,9.34875 11.4581165,6.85875 C11.4581165,4.36875 9.41698842,2.34225 6.90825919,2.34225 Z M13.9056572,11.6745 C13.2884841,12.5565 12.5066309,13.3155 11.6046668,13.91025 L15.7231828,18 L18,15.74025 L13.9056572,11.6745 L13.9056572,11.6745 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

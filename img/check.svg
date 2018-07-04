@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>iconmonstr-check-mark-5</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-344.000000, -115.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <g id="Garantie-bar" transform="translate(0.000000, 97.000000)">
+                <g id="Group-8" transform="translate(344.000000, 17.000000)">
+                    <g id="Group-7">
+                        <g id="iconmonstr-check-mark-5" transform="translate(0.000000, 1.000000)">
+                            <path d="M8,1.33333333 C11.676,1.33333333 14.6666667,4.324 14.6666667,8 C14.6666667,11.676 11.676,14.6666667 8,14.6666667 C4.324,14.6666667 1.33333333,11.676 1.33333333,8 C1.33333333,4.324 4.324,1.33333333 8,1.33333333 Z M8,0 C3.582,0 0,3.582 0,8 C0,12.418 3.582,16 8,16 C12.418,16 16,12.418 16,8 C16,3.582 12.418,0 8,0 Z M10.9286667,5 L7.16666667,8.856 L5.404,7.18533333 L4.16666667,8.424 L7.16666667,11.3333333 L12.1666667,6.238 L10.9286667,5 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
