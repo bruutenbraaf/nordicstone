@@ -111,4 +111,18 @@ acf_add_options_page( array(
 ) );
 
 
+function my_wp_nav_menu_args( $args = '' ) {
+ 
+if( is_user_logged_in() ) { 
+    $args['menu'] = 'logged-in';
+} else { 
+    $args['menu'] = 'logged-out';
+} 
+    return $args;
+}
+add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' );
+add_filter( 'woocommerce_subcategory_count_html', 'wcc_hide_category_count' );
+function wcc_hide_category_count() {
+	// No count
+}
 ?>

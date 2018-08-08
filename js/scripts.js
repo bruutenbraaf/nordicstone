@@ -29,23 +29,26 @@ $('.carousel-ui .carousel-item').each(function(){
       }
 });
 
-$( ".nav .row .user_menu ul .cart" ).click(function() { 
-		$('.cart_pop').toggleClass("hide");
-		if ( $('.cart_pop').hasClass("hide") ) {
-			$('.cart_pop').css('visibility', 'visible');
-			$('.cart_pop').css('pointerEvents', 'all');
-			$('.cart_pop').addClass('cart_in');
-			$('.cart_pop').removeClass('out');
-		}
-		else {
-			$('.cart_pop').css('visibility', 'hidden');
-			$('.cart_pop').removeClass('cart_in');
-			$('.cart_pop').addClass('out');
-			$('.cart_pop').css('pointerEvents', 'none');
-		}
-});
-
 
 $( ".add_to_cart_button" ).click(function updateDiv() { 
 	$( ".cart" ).load(window.location.href + " .cart" );
+});
+
+var open = $('.open'),
+    a = $('ul').find('a');
+
+console.log(a.hasClass('active'));
+
+open.click(function(e){
+    e.preventDefault();
+    var $this = $(this),
+        speed = 500;
+    if($this.hasClass('active') === true) {
+        $this.removeClass('active').next('.box').removeClass('box_active');
+    } else if(a.hasClass('active') === false) {
+        $this.addClass('active').next('.box').addClass('box_active');
+    } else {
+        a.removeClass('active').next('.box').removeClass('box_active');
+        $this.addClass('active').next('.box').addClass('box_active');
+    }
 });

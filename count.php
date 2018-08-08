@@ -1,1 +1,1 @@
-<img src="<?php echo esc_url( get_template_directory_uri() )?>/img/cart.svg"><span class="count"><?php echo sprintf ( _n( '%d ', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> 
+<span class="u_icon"><img src="<?php echo esc_url( get_template_directory_uri() )?>/img/cart.svg"></span><span class="count"><?php echo sprintf ( _n( '%d ', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> 

@@ -14,7 +14,7 @@
 <body>
 	<div class="nav">
 		<div class="container">
-			<div class="row">
+			<div class="row menu">
 				<div class="col-md-2 branding">
 					<?php if ( get_field( 'upload_logo', 'option' ) ) { ?>
 						<a href="<?php echo get_home_url(); ?>">
@@ -74,34 +74,50 @@
 					</ul>
 				</div>
 				<div class="col-md-2 user_menu">
+					
+					
 					<ul>
-						<li><img src="<?php echo esc_url( get_template_directory_uri() )?>/img/user.svg"></li>
-						<li class="cart">
-						
-						
-						<?php get_template_part( 'count', 'index' ); ?>
-						
-						</span>
-						<ul class="cart_pop toon">
-									<?php
-    global $woocommerce;
-    $items = $woocommerce->cart->get_cart();
-
-        foreach($items as $item => $values) { 
-            $_product =  wc_get_product( $values['data']->get_id()); 
-            echo "<span class='info'>" .$values['quantity'].'x <b>'.$_product->get_title().'</b>'; 
-            $price = get_post_meta($values['product_id'] , '_price', '</span>', true);
-            echo "</span><hr>";
-        } 
-?>
-
-<span class="sub_cart_total">Totaal:</span> <?php echo $woocommerce->cart->get_cart_total(); ?>
-<a href="<?php echo get_permalink( wc_get_page_id( 'cart' ) ); ?>" class="button">Checkout</a>
-</ul>
-						
-						</li>
-						<li><img src="<?php echo esc_url( get_template_directory_uri() )?>/img/search.svg"></li>
+					    <li id="one">
+					        <a href="#" class="open"><img src="<?php echo esc_url( get_template_directory_uri() )?>/img/user.svg"></a>
+					        <div class="box">
+						        
+						        <?php wp_nav_menu( $args ); ?>
+						        
+					        </div>        
+					    </li>
+					    <li id="two">
+					        <a href="#" class="open cart_icon"><?php get_template_part( 'count', 'index' ); ?></a>
+					        <div class="box">
+						        
+						        <?php
+								    global $woocommerce;
+								    $items = $woocommerce->cart->get_cart();
+								
+								        foreach($items as $item => $values) { 
+								            $_product =  wc_get_product( $values['data']->get_id()); 
+								            echo "<span class='info'>" .$values['quantity'].'x <b>'.$_product->get_title().'</b>'; 
+								            $price = get_post_meta($values['product_id'] , '_price', '</span>', true);
+								            echo "</span><hr>";
+								        } 
+								?>
+								
+								<span class="sub_cart_total">Totaal:</span> <?php echo $woocommerce->cart->get_cart_total(); ?>
+								<a href="<?php echo get_permalink( wc_get_page_id( 'cart' ) ); ?>" class="button">Afrekenen</a>
+						        
+					        </div>
+					    </li>
+					     <li id="three">
+					        <a href="#" class="open"><img src="<?php echo esc_url( get_template_directory_uri() )?>/img/search.svg"></a>
+					        <div class="box header_search">
+						        <?php get_search_form(); ?>
+					        </div>
+					    </li>
 					</ul>
+
+
+
+					
+					
 				</div>
 			</div>
 		</div>

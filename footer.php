@@ -21,9 +21,9 @@
 				
 				<h2 class="widgetitle">Makkelijk online shoppen</h2>
 				<ul>
-					<li><img src="<?php echo esc_url( get_template_directory_uri() )?>/img/truck.svg">Snelle levering</li>
+					<li><img src="<?php echo esc_url( get_template_directory_uri() )?>/img/truck.svg">Levering in heel Europa</li>
 					<li><img src="<?php echo esc_url( get_template_directory_uri() )?>/img/return.svg">Makkelijk retour</li>
-					<li><img src="<?php echo esc_url( get_template_directory_uri() )?>/img/bedenktijd.svg">30 dagen bedenktijd</li>
+					<li><img src="<?php echo esc_url( get_template_directory_uri() )?>/img/bedenktijd.svg">14 dagen bedenktijd</li>
 				</ul>
 				
 				<?php dynamic_sidebar( 'footer_vier' ); ?>
