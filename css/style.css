@@ -451,7 +451,6 @@ body {
     padding: 15px;
     box-sizing: border-box; }
     .uitgelichte_producten_homepagina li .title {
-      font-weight: bold;
       width: 100%;
       display: block;
       float: none; }
@@ -824,5 +823,11 @@ body {
 
 .shop_sidebar .count {
   display: none; }
+
+.woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce ul.products li.product .woocommerce-loop-product__title, .woocommerce ul.products li.product h3 {
+  padding: 0px; }
+
+span.woocommerce-Price-amount {
+  font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */

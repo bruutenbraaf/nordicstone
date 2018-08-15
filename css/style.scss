@@ -600,7 +600,6 @@ body {
 			    padding: 15px;
 			    box-sizing: border-box;
 			    .title {
-				    font-weight: bold;
 				    width:100%;
 				    display: block;
 				    float:none;
@@ -1118,4 +1117,13 @@ body {
 	
 .widget {
 	
+}
+
+
+.woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce ul.products li.product .woocommerce-loop-product__title, .woocommerce ul.products li.product h3 {
+	padding:0px;
+}
+
+span.woocommerce-Price-amount {
+	font-weight: bold;
 }

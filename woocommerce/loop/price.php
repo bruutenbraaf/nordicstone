@@ -24,5 +24,4 @@ global $product;
 ?>
 
 <?php if ( $price_html = $product->get_price_html() ) : ?>
-	<span class="incl_price"><?php echo $price_html; ?></span> <span class="exl_btw"><?php echo wc_price( wc_get_price_excluding_tax( $product ) ); ?> excl. BTW</span>
-<?php endif; ?>
+	<span class="incl_price"> <?php echo $price_html; ?></span><?php endif; ?>
