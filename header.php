@@ -143,11 +143,5 @@
 	<?php else: ?>
 		<?php // no layouts found ?>
 	<?php endif; ?>
-	
-	
-	
-	
-	
-	
 
 	

@@ -125,4 +125,23 @@ add_filter( 'woocommerce_subcategory_count_html', 'wcc_hide_category_count' );
 function wcc_hide_category_count() {
 	// No count
 }
+
+
+
+
+function remove_uncategorized_category( $terms, $taxonomy, $query_vars, $term_query ) {
+	if ( is_admin() )
+		return $terms;
+ 
+	if ( $taxonomy[0] == 'product_cat' ) {
+		foreach ( $terms as $k => $term ) {
+			if ( $term->term_id == get_option( 'default_product_cat' ) ) {
+				unset( $terms[$k] );
+			}
+		}
+	}
+ 
+	return $terms;
+}
+add_filter( 'get_terms', 'remove_uncategorized_category', 10, 4 );
 ?>
