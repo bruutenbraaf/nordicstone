@@ -144,4 +144,11 @@ function remove_uncategorized_category( $terms, $taxonomy, $query_vars, $term_qu
 	return $terms;
 }
 add_filter( 'get_terms', 'remove_uncategorized_category', 10, 4 );
+
+function filter_plugin_updates( $value ) {
+    unset( $value->response['advanced-custom-fields-pro/acf.php'] );
+    unset( $value->response['acf-theme-code-pro/acf_theme_code_pro.php'] );
+    return $value;
+}
+add_filter( 'site_transient_update_plugins', 'filter_plugin_updates' );
 ?>
