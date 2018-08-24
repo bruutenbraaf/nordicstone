@@ -24,4 +24,5 @@ global $product;
 ?>
 
 <?php if ( $price_html = $product->get_price_html() ) : ?>
-	<span class="incl_price"> <?php echo $price_html; ?></span><?php endif; ?>
+	<span class="incl_price"><?php echo $price_html; ?></span>
+<?php endif; ?>

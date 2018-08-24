@@ -24,7 +24,8 @@ global $product;
 
 ?>
 <?php the_title( '<h3 class="single_titel">', '</h3>' ); ?>
-<p class="price"><?php echo $product->get_price_html(); ?></p>
+<p class="price"><?php echo wc_price( wc_get_price_including_tax( $product ) ); ?> </p>
+<span class="exl_btw"><?php echo $product->get_price_html(); ?>excl. BTW</span>
 <ul class="single_list">
 	<li>Binnen 3 tot 4 werkdagen thuis </li>
 	<li>30 dagen bedenktijd </li>

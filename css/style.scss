@@ -272,12 +272,13 @@ body {
 		font-style: italic;
 	}
 	.button {
-		background:white;
-		color: $maincolor;
+		background:black;
+		color: $white;
 		padding:14px 32px;
-		border:1px solid;
 		margin-top:30px;
 		display: inline-block;
+		text-transform: uppercase;
+		font-weight: 600;
 	}
 	.carousel-inner {
 		.carousel-item {
@@ -1126,4 +1127,11 @@ body {
 
 span.woocommerce-Price-amount {
 	font-weight: bold;
+}
+
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+    color: #77a464;
+    font-size: 1.25em;
+    padding: 0px;
+    margin: 0px 0px -9px 0px;
 }

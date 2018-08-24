@@ -205,12 +205,13 @@ body {
   text-transform: uppercase;
   font-style: italic; }
 .home_carousel .button {
-  background: white;
-  color: #000000;
+  background: black;
+  color: #fff;
   padding: 14px 32px;
-  border: 1px solid;
   margin-top: 30px;
-  display: inline-block; }
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 600; }
 .home_carousel .carousel-inner .carousel-item {
   background-size: cover !important;
   background-repeat: no-repeat !important; }
@@ -829,5 +830,11 @@ body {
 
 span.woocommerce-Price-amount {
   font-weight: bold; }
+
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+  color: #77a464;
+  font-size: 1.25em;
+  padding: 0px;
+  margin: 0px 0px -9px 0px; }
 
 /*# sourceMappingURL=style.css.map */
