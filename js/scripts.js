@@ -52,3 +52,36 @@ open.click(function(e){
         $this.addClass('active').next('.box').addClass('box_active');
     }
 });
+
+
+var hamburger = $('.hamburger')
+	cheese = $('.cheese div')
+	
+hamburger.click(function() {
+  cheese.toggleClass('activated');
+  $( ".nav .row .categorie ul" ).slideToggle(300);
+  if (cheese.hasClass('activated') === true) {
+	  $( ".cheese div:first-child" ).addClass('hamburgerfirst');
+	  $( ".cheese div:nth-child(2)" ).addClass('hamburgermiddle');
+	  $( ".cheese div:last-child" ).addClass('hamburgerlast');
+  } else {
+  	  $( ".cheese div:first-child" ).removeClass('hamburgerfirst');
+	  $( ".cheese div:nth-child(2)" ).removeClass('hamburgermiddle');
+	  $( ".cheese div:last-child" ).removeClass('hamburgerlast');      
+  }
+});
+
+$(window).scroll(function () {
+    var $this = $(this),
+        $up = $('.up');
+    if ($this.scrollTop() > 200) {
+       $up.addClass('up_activated');
+    } else {
+       $up.removeClass('up_activated');
+    }
+});
+
+ $('.up').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    });

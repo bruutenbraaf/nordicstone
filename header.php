@@ -22,6 +22,13 @@
 						</a>
 					<?php } ?>
 				</div>
+				<div class="hamburger">
+					<div class="cheese">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
 				<div class="col-md-8 categorie">
 					<ul>
 									<?php
@@ -78,7 +85,13 @@
 					
 					<ul>
 					    <li id="one">
-					        <a href="#" class="open"><img src="<?php echo esc_url( get_template_directory_uri() )?>/img/user.svg"></a>
+					        <a href="#" class="open">
+						        
+						        
+						        <svg id="user_icon" data-name="user icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><path id="Shape" d="M15.62,13.57c-2.58-.59-5-1.12-3.82-3.31C15.34,3.57,12.74,0,9,0S2.65,3.71,6.2,10.26C7.4,12.47,4.91,13,2.38,13.57.08,14.1,0,15.25,0,17.25V18H18v-.73C18,15.26,17.93,14.11,15.62,13.57Z" transform="translate(0 0)"/></svg>
+						        
+						        
+					        </a>
 					        <div class="box">
 						        
 						        <?php wp_nav_menu( $args ); ?>
@@ -107,7 +120,13 @@
 					        </div>
 					    </li>
 					     <li id="three">
-					        <a href="#" class="open"><img src="<?php echo esc_url( get_template_directory_uri() )?>/img/search.svg"></a>
+					        <a href="#" class="open">
+						        
+						        
+						        <svg id="search_icon" data-name="search icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><path id="Shape" d="M6.91,13.72A6.89,6.89,0,0,1,0,6.86a6.91,6.91,0,0,1,13.82,0A6.89,6.89,0,0,1,6.91,13.72Zm0-11.38a4.52,4.52,0,1,0,4.55,4.52A4.54,4.54,0,0,0,6.91,2.34Zm7,9.33a8.35,8.35,0,0,1-2.31,2.24L15.72,18,18,15.74l-4.09-4.07Z" transform="translate(0 0)"/></svg>
+						        
+						        
+					        </a>
 					        <div class="box header_search">
 						        <?php get_search_form(); ?>
 					        </div>

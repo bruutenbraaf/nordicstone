@@ -37,6 +37,26 @@ $bordercolor: #d9d9d9;
 	animation-fill-mode: forwards;
 	}
 	
+%hamburgerfirst {
+	animation: hamburgerfirst;
+ 	animation-duration: 0.2s;
+	animation-fill-mode: forwards;
+	animation-delay: 0.1s;
+	}
+	
+%hamburgermiddle {
+	animation: hamburgermiddle;
+ 	animation-duration: 0.2s;
+	animation-fill-mode: forwards;
+	}
+	
+%hamburgerlast {
+	animation: hamburgerlast;
+ 	animation-duration: 0.2s;
+	animation-fill-mode: forwards;
+	animation-delay: 0.1s;
+	}
+	
 	%cart_menu_in {
 	animation: cartIn;
  	animation-duration: 0.2s;
@@ -50,6 +70,12 @@ $bordercolor: #d9d9d9;
 %sub_menu_out {
 	animation: subOut;
  	animation-duration: 0.2s;
+	animation-fill-mode: forwards;
+	}
+	
+%upactivated {
+	animation: upActivated;
+ 	animation-duration: 0.4s;
 	animation-fill-mode: forwards;
 	}
 
@@ -923,6 +949,17 @@ body {
   }
 }
 
+@keyframes upActivated {
+  0% {
+  	bottom:-40px;
+  	opacity: 0;
+  }
+  100% {
+    bottom:-20px;
+    opacity: 1;
+  }
+}
+
 @keyframes subOut {
   0% {
     margin-top:15px;
@@ -976,6 +1013,44 @@ body {
   }
   100% {
 	 
+  }
+}
+
+
+
+
+
+
+@keyframes hamburgerfirst {
+  0% {
+   	transform: rotate(0deg);
+   	width: 20px;
+  }
+  100% {
+    transform: rotate(45deg);
+    width: 20px;
+  }
+}
+
+@keyframes hamburgerlast {
+  0% {
+    transform: rotate(-0deg);
+    width: 15px;
+    margin-top: 3px;
+  }
+  100% {
+    transform: rotate(-45deg);
+    width: 20px;
+    margin-top: -13px;
+  }
+}
+
+@keyframes hamburgermiddle {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
@@ -1063,9 +1138,12 @@ body {
 	float:right;
 	display: table;
 	li {
-	display: table-cell;
-	text-align: center;
-	position: relative;
+		display: table-cell;
+		text-align: center;
+		position: relative;
+		svg {
+			max-height: 20px;
+		}
 	}
 }
 
@@ -1134,4 +1212,129 @@ span.woocommerce-Price-amount {
     font-size: 1.25em;
     padding: 0px;
     margin: 0px 0px -9px 0px;
+}
+
+.up {
+	width:40px;
+	height:40px;
+	transform:rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	position: fixed;
+	background:$maincolor;
+	bottom:-40px;
+	right:25px;
+	display: block;
+	color:white;
+	z-index: 999;
+	opacity: 0;
+	cursor: pointer;
+	.fa {
+		position: absolute;
+	    transform: rotate(-45deg);
+	    -webkit-transform: rotate(-136deg);
+	    top: 2px;
+	    left: 21px;
+	    font-size: 20px;
+	}
+}
+
+.up_activated {
+	@extend %upactivated;
+}
+
+.hamburgerfirst{
+	@extend %hamburgerfirst;
+}
+
+.hamburgermiddle{
+	@extend %hamburgermiddle;
+}
+
+.hamburgerlast{
+	@extend %hamburgerlast;
+}
+
+@media only screen and (max-width: 1024px) {
+	.nav {
+		.row {
+			height: inherit;
+			padding:15px 0px;
+			.categorie {
+				ul {
+					display: none;
+					text-align: inherit;
+					padding: 20px 0 0px 0px;
+					li {
+						display: block;
+					    padding: 8px 0;
+					    width: 100%;
+					    float: none;
+					    position: relative;
+					    border-bottom: 1px solid #dadada;
+						&:last-child {
+							border-bottom: 0px;
+						}
+					}
+					.has_sub {
+						&:after {
+							position: absolute;
+							right:0px;
+						}
+					}
+				}
+			}
+			.branding {
+				width:40%; 
+				float:left;
+			}
+		}
+	}
+	.services {
+		display: none;
+	}
+	.hamburger {
+		width:60%;
+		float:right;
+		padding:0px 15px;
+		cursor: pointer;
+		.cheese {
+			width:20px;
+			float:right;
+			div {
+				width: 20px;
+			    min-height: 2px;
+			    background: $maincolor;
+			    margin: 3px 0px;
+			    float: right;
+			    &:first-child {
+				    width:20px;
+			    }
+			    &:nth-child(2) {
+				    width:10px;
+			    }
+			    &:nth-child(3) {
+				    width:15px;
+			    }
+			}
+		}
+	}
+	
+	.user_menu {
+		background: black;
+	    padding: 15px 0px 10px 0px;
+	    margin:20px 0px -15px 0px;
+		ul {
+		    width: 80%;
+		    margin: 0 auto;
+		    float:inherit;
+		    li {
+			    fill:white;
+		    }
+	    }
+	}
+	.cart_icon {
+		.count {
+    		right: 27%;
+    	}
+	}
 }
