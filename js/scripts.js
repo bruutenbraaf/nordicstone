@@ -12,22 +12,46 @@ $('#uitgelichtCarousel').carousel({
   interval: 10000
 })
 
-$('.carousel-ui .carousel-item').each(function(){
-    var next = $(this).next();
-    if (!next.length) {
-    next = $(this).siblings(':first');
-    }
-    next.children(':first-child').clone().appendTo($(this));
-    
-    for (var i=0;i<2;i++) {
-        next=next.next();
-        if (!next.length) {
-        	next = $(this).siblings(':first');
-      	}
-        
-        next.children(':first-child').clone().appendTo($(this));
-      }
-});
+
+
+
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+ 	$('.carousel-ui .carousel-item').each(function(){
+	    var next = $(this).next();
+	    if (!next.length) {
+	    next = $(this).siblings(':first');
+	    }
+	    next.children(':first-child').clone().appendTo($(this));
+	    
+	    for (var i=0;i<0;i++) {
+	        next=next.next();
+	        if (!next.length) {
+	        	next = $(this).siblings(':first');
+	      	}
+	        
+	        next.children(':first-child').clone().appendTo($(this));
+	      }
+	});
+
+}else
+{
+	$('.carousel-ui .carousel-item').each(function(){
+	    var next = $(this).next();
+	    if (!next.length) {
+	    next = $(this).siblings(':first');
+	    }
+	    next.children(':first-child').clone().appendTo($(this));
+	    
+	    for (var i=0;i<2;i++) {
+	        next=next.next();
+	        if (!next.length) {
+	        	next = $(this).siblings(':first');
+	      	}
+	        
+	        next.children(':first-child').clone().appendTo($(this));
+	      }
+	});
+}
 
 
 $( ".add_to_cart_button" ).click(function updateDiv() { 

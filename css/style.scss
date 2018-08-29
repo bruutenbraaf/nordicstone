@@ -1337,4 +1337,25 @@ span.woocommerce-Price-amount {
     		right: 27%;
     	}
 	}
+	
+	.nav-tabs li {
+		margin-right: 15px;
+		margin-top: 20px;
+	}
+	
+	
+	.carousel-ui {
+	list-style: none;
+		.carousel-item {
+			width: 100%;
+			margin:0px -15px;
+			transition-duration: 0.4s;
+			a {
+				width: 50%;
+				padding:15px;
+				box-sizing: border-box;
+			}
+		}
+	} 
+	
 }

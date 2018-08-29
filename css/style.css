@@ -971,6 +971,21 @@ span.woocommerce-Price-amount {
         fill: white; }
 
   .cart_icon .count {
-    right: 27%; } }
+    right: 27%; }
+
+  .nav-tabs li {
+    margin-right: 15px;
+    margin-top: 20px; }
+
+  .carousel-ui {
+    list-style: none; }
+    .carousel-ui .carousel-item {
+      width: 100%;
+      margin: 0px -15px;
+      transition-duration: 0.4s; }
+      .carousel-ui .carousel-item a {
+        width: 50%;
+        padding: 15px;
+        box-sizing: border-box; } }
 
 /*# sourceMappingURL=style.css.map */
