@@ -41,6 +41,7 @@
 		<script src="<?php echo esc_url( get_template_directory_uri() )?>/bootstrap/js/bootstrap.min.js"></script>
 		<script src="<?php echo esc_url( get_template_directory_uri() )?>/js/scripts.js"></script>
 	<script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() )?>/js/skrollr.min.js"></script>
+	<script src="<?php echo esc_url( get_template_directory_uri() )?>/js/jquerymobile.min.js"></script>
 	<script type="text/javascript">
 	var s = skrollr.init();
 	</script>
