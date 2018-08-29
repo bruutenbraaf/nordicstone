@@ -109,3 +109,12 @@ $(window).scroll(function () {
         $('html, body').animate({scrollTop : 0},800);
         return false;
     });
+ 
+$(document).ready(function() {
+  $("#carouselcontrols").swiperight(function() {
+    $(this).carousel('prev');
+  });
+  $("#carouselcontrols").swipeleft(function() {
+    $(this).carousel('next');
+  });
+});
