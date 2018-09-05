@@ -164,3 +164,5 @@
 	<?php endif; ?>
 
 	
+	
+	<button onclick="alertCookie()">Show cookie value</button>

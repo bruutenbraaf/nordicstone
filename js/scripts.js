@@ -1,4 +1,4 @@
-jQuery( '.carousel-inner').find('.carousel-item:first' ).addClass( 'active' );
+$( '.carousel-inner').find('.carousel-item:first' ).addClass( 'active' );
 $('li:has(> ul)').addClass('has_sub');
 
 $('.nav-tabs a').click(function (e) {
@@ -61,8 +61,6 @@ $( ".add_to_cart_button" ).click(function updateDiv() {
 var open = $('.open'),
     a = $('ul').find('a');
 
-console.log(a.hasClass('active'));
-
 open.click(function(e){
     e.preventDefault();
     var $this = $(this),
@@ -110,28 +108,43 @@ $(window).scroll(function () {
         return false;
     });
     
+
+
+
+ 
     
-    jQuery(document).ready(function () {
-    jQuery('#grid').click(function () {
-        jQuery(this).addClass('active');
-        jQuery('#list').removeClass('active');
-        jQuery('ul.products').fadeOut(300, function () {
-            jQuery(this).addClass('grid').removeClass('list').fadeIn(300);
+    
+$(document).ready(function () {
+    $('#grid').click(function () {
+        $(this).addClass('active');
+        $('#list').removeClass('active');
+        $('ul.products').fadeOut(300, function () {
+            $(this).addClass('grid').removeClass('list').fadeIn(300);
         });
-         jQuery('.list_items').fadeOut(300);
+         $('.list_items').fadeOut(300);
+         Cookies.remove('list', 'false');
     });
 
-    jQuery('#list').click(function () {
-        jQuery(this).addClass('active');
-        jQuery('#grid').removeClass('active');
-        jQuery('ul.products').fadeOut(300, function () {
-        jQuery(this).removeClass('grid').addClass('list').fadeIn(300);
-        jQuery('.list_items').fadeIn(300);
+    $('#list').click(function () {
+        $(this).addClass('active');
+        $('#grid').removeClass('active');
+        $('ul.products').fadeOut(300, function () {
+        $(this).removeClass('grid').addClass('list').fadeIn(300);
         });
-        return false;
+        $('.list_items').fadeIn(300);
+        Cookies.set('list', 'false');        
     });
 
-    jQuery('#gridlist-toggle a').click(function (event) {
+    $('#gridlist-toggle a').click(function (event) {
         event.preventDefault();
     });
   });
+
+
+
+if (document.cookie.indexOf("list") >= false) {
+   		$('ul.products').addClass('list').fadeIn(300);
+   		$('.list_items').fadeIn(300);
+}
+else {
+}

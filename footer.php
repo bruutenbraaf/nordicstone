@@ -38,13 +38,10 @@
 </div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 		<script src="<?php echo esc_url( get_template_directory_uri() )?>/bootstrap/js/bootstrap.min.js"></script>
 		<script src="<?php echo esc_url( get_template_directory_uri() )?>/js/scripts.js"></script>
-	<script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() )?>/js/skrollr.min.js"></script>
 	<script src="<?php echo esc_url( get_template_directory_uri() )?>/js/jquerymobile.min.js"></script>
-	<script type="text/javascript">
-	var s = skrollr.init();
-	</script>
 		<?php wp_footer(); ?>
 	</body>
 </html>
