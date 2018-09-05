@@ -1285,6 +1285,16 @@ span.woocommerce-Price-amount {
 .woocommerce table.shop_attributes {
 	margin: 30px 0px 20px 0px;
 }
+.product_cat_image {
+	min-height: 150px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.woocommerce ul.products li.product a img {
+	max-height: 150px;
+	width:auto;
+}
 
 @media only screen and (max-width: 1024px) {
 	.nav {
