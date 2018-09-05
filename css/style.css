@@ -878,7 +878,7 @@ body {
   display: none; }
 
 .woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce ul.products li.product .woocommerce-loop-product__title, .woocommerce ul.products li.product h3 {
-  padding: 0px; }
+  padding: 10px 0px 0px 0px; }
 
 span.woocommerce-Price-amount {
   font-weight: bold; }
@@ -944,7 +944,7 @@ span.woocommerce-Price-amount {
 .woocommerce ul.products li.product a img {
   max-height: 150px;
   width: auto;
-  margin: 10px 0px; }
+  margin: 0 auto; }
 
 @media only screen and (max-width: 1024px) {
   .nav .row {
