@@ -943,7 +943,8 @@ span.woocommerce-Price-amount {
 
 .woocommerce ul.products li.product a img {
   max-height: 150px;
-  width: auto; }
+  width: auto;
+  margin: 10px 0px; }
 
 @media only screen and (max-width: 1024px) {
   .nav .row {
