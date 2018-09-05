@@ -162,7 +162,3 @@
 	<?php else: ?>
 		<?php // no layouts found ?>
 	<?php endif; ?>
-
-	
-	
-	<button onclick="alertCookie()">Show cookie value</button>
