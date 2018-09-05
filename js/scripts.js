@@ -1,3 +1,5 @@
+/* CAROUSEL */
+
 $( '.carousel-inner').find('.carousel-item:first' ).addClass( 'active' );
 $('li:has(> ul)').addClass('has_sub');
 
@@ -11,8 +13,6 @@ $('.nav-tabs a').click(function (e) {
 $('#uitgelichtCarousel').carousel({
   interval: 10000
 })
-
-
 
 
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
@@ -53,10 +53,14 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 	});
 }
 
+/* CART UPDATE */
 
 $( ".add_to_cart_button" ).click(function updateDiv() { 
 	$( ".cart" ).load(window.location.href + " .cart" );
 });
+
+
+/* DROP DOWN CART */
 
 var open = $('.open'),
     a = $('ul').find('a');
@@ -76,6 +80,8 @@ open.click(function(e){
 });
 
 
+/* HAMBURGER MOBIEL */
+
 var hamburger = $('.hamburger')
 	cheese = $('.cheese div')
 	
@@ -92,6 +98,9 @@ hamburger.click(function() {
 	  $( ".cheese div:last-child" ).removeClass('hamburgerlast');      
   }
 });
+
+
+/* SCROLL UP */ 
 
 $(window).scroll(function () {
     var $this = $(this),
@@ -111,7 +120,7 @@ $(window).scroll(function () {
 
 
 
- 
+ /* GRID LIST TOGGLE */
     
     
 $(document).ready(function () {
@@ -148,3 +157,26 @@ if (document.cookie.indexOf("list") >= false) {
 }
 else {
 }
+
+
+
+/* WIDGET MEER WEERGEVEN */
+
+
+if( $('ul.woocommerce-widget-layered-nav-list li').length >= 3 ){ 
+		$( "ul.woocommerce-widget-layered-nav-list li:nth-child(3)" ).nextAll().css({"display":"none"});
+		$("ul.woocommerce-widget-layered-nav-list li:nth-child(3)").closest("ul").after( "<div class='more_btn'>Meer</div>" );
+		$("ul.woocommerce-widget-layered-nav-list li:nth-child(3)").closest("ul").after( "<div class='less_btn'>Minder</div>" );
+}
+	
+$('.more_btn').click(function () { 
+	$( "ul.woocommerce-widget-layered-nav-list li:nth-child(3)" ).nextAll().slideToggle(300);
+	$('.more_btn').css({"display":"none"}).fadeOut(300);
+	$('.less_btn').delay(5).css({"display":"inline-block"}).fadeIn(300);
+});
+
+$('.less_btn').click(function () { 
+	$( "ul.woocommerce-widget-layered-nav-list li:nth-child(3)" ).nextAll().slideToggle(300);
+	$('.more_btn').delay(5).css({"display":"inline-block"}).fadeIn(300);
+	$('.less_btn').css({"display":"none"}).fadeOut(300);
+});

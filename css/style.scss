@@ -850,9 +850,11 @@ body {
 			    font-size: 1em;
 			    text-transform: uppercase;
 			    letter-spacing: .2em;
+			    padding:0 0 15px 0;
 			}
 		}
 		.woocommerce-widget-layered-nav-list {
+			padding-bottom: 15px;
 			li {
 				position: relative;
 				&:after {
@@ -1530,4 +1532,25 @@ ul.products {
 	.list_b {
 		text-align: left !important;
 	}
+}
+
+
+.more_open {
+	background:yellow;
+}
+
+.widget .more_btn {
+	margin: -10px 0px 15px 0px;
+	background: $maincolor;
+	color:white;
+	padding: 2px 8px;
+	display: inline-block;
+}
+
+.widget .less_btn {
+	margin: -10px 0px 15px 0px;
+	background: $maincolor;
+	color:white;
+	padding: 2px 8px;
+	display: none;
 }
