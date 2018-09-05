@@ -165,8 +165,8 @@ else {
 
 if( $('ul.woocommerce-widget-layered-nav-list li').length >= 3 ){ 
 		$( "ul.woocommerce-widget-layered-nav-list li:nth-child(3)" ).nextAll().css({"display":"none"});
-		$("ul.woocommerce-widget-layered-nav-list li:nth-child(3)").closest("ul").after( "<div class='more_btn'>Meer</div>" );
-		$("ul.woocommerce-widget-layered-nav-list li:nth-child(3)").closest("ul").after( "<div class='less_btn'>Minder</div>" );
+		$("ul.woocommerce-widget-layered-nav-list li:nth-child(3)").closest("ul").after( "<div class='more_btn'>Toon meer</div>" );
+		$("ul.woocommerce-widget-layered-nav-list li:nth-child(3)").closest("ul").after( "<div class='less_btn'>Toon minder</div>" );
 }
 	
 $('.more_btn').click(function () { 
