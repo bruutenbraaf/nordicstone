@@ -22,7 +22,27 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $product;
 ?>
+<div class="grid_info">
+	<?php if ( $price_html = $product->get_price_html() ) : ?>
+		<span class="incl_price"><?php echo $price_html; ?></span>
+	<?php endif; ?>
+</div>
 
-<?php if ( $price_html = $product->get_price_html() ) : ?>
-	<span class="incl_price"><?php echo $price_html; ?></span>
-<?php endif; ?>
+
+<div class="container list_items">
+	<div class="row">
+		<div class="col-md-12">
+		<?php if ( $price_html = $product->get_price_html() ) : ?>
+			<span class="incl_price"><?php echo $price_html; ?></span>
+		<?php endif; ?>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-8"><?php the_excerpt(); ?></div>
+		<div class="col-md-4 list_b">
+			
+<?php echo do_shortcode('[stock_status]'); ?>
+			
+			<button> Bekijk product </button></div>
+	</div>
+</div>

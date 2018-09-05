@@ -109,4 +109,29 @@ $(window).scroll(function () {
         $('html, body').animate({scrollTop : 0},800);
         return false;
     });
- 
+    
+    
+    jQuery(document).ready(function () {
+    jQuery('#grid').click(function () {
+        jQuery(this).addClass('active');
+        jQuery('#list').removeClass('active');
+        jQuery('ul.products').fadeOut(300, function () {
+            jQuery(this).addClass('grid').removeClass('list').fadeIn(300);
+        });
+         jQuery('.list_items').fadeOut(300);
+    });
+
+    jQuery('#list').click(function () {
+        jQuery(this).addClass('active');
+        jQuery('#grid').removeClass('active');
+        jQuery('ul.products').fadeOut(300, function () {
+        jQuery(this).removeClass('grid').addClass('list').fadeIn(300);
+        jQuery('.list_items').fadeIn(300);
+        });
+        return false;
+    });
+
+    jQuery('#gridlist-toggle a').click(function (event) {
+        event.preventDefault();
+    });
+  });
