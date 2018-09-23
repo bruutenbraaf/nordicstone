@@ -180,3 +180,15 @@ $('.less_btn').click(function () {
 	$('.more_btn').delay(5).css({"display":"inline-block"}).fadeIn(300);
 	$('.less_btn').css({"display":"none"}).fadeOut(300);
 });
+
+
+
+
+if ($(window).width() < 1024) {
+   $('.has_sub').click(function () { 
+	  has_sub
+   });
+}
+else {
+   
+}

@@ -1049,6 +1049,27 @@ ul.products .shop_attributes {
   margin: 0px !important; }
 
 @media only screen and (max-width: 1024px) {
+  .has_sub a {
+    pointer-events: none; }
+
+  .nav .row .categorie ul li {
+    display: inline-block !important; }
+  .nav .row .categorie ul ul {
+    margin-top: 0px;
+    padding: 0px;
+    position: inherit;
+    visibility: hidden;
+    display: none;
+    animation: none !important; }
+    .nav .row .categorie ul ul:before {
+      display: none; }
+    .nav .row .categorie ul ul:after {
+      display: none; }
+    .nav .row .categorie ul ul li {
+      width: 100%;
+      display: inline-block;
+      border-bottom: 0px; }
+
   .nav .row {
     height: inherit;
     padding: 15px 0px; }
@@ -1067,7 +1088,8 @@ ul.products .shop_attributes {
           border-bottom: 0px; }
       .nav .row .categorie ul .has_sub:after {
         position: absolute;
-        right: 0px; }
+        right: 0px;
+        top: 8px; }
     .nav .row .branding {
       width: 40%;
       float: left; }
@@ -1138,13 +1160,15 @@ ul.products .shop_attributes {
   background: #000000;
   color: white;
   padding: 2px 8px;
-  display: inline-block; }
+  display: inline-block;
+  cursor: pointer; }
 
 .widget .less_btn {
   margin: -10px 0px 15px 0px;
   background: #000000;
   color: white;
   padding: 2px 8px;
-  display: none; }
+  display: none;
+  cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */
