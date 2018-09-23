@@ -258,7 +258,7 @@ body {
     position: absolute;
     left: 15px; }
 .home_carousel .container .row {
-  min-height: 500px;
+  min-height: 74vh;
   display: flex;
   align-items: center; }
 
