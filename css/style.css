@@ -1055,7 +1055,7 @@ ul.products .shop_attributes {
 .woocommerce form .form-row label {
   width: 100%; }
 
-.woocommerce .info {
+.woocommerce .info, .woocommerce-error, .woocommerce-info, .woocommerce-message {
   border-top-color: #1e85be;
   margin-top: 30px;
   color: white;

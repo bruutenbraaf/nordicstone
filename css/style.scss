@@ -1430,8 +1430,8 @@ ul.products {
 	width:100%;
 }
 
-.woocommerce .info{
-	    border-top-color: #1e85be;
+.woocommerce .info, .woocommerce-error, .woocommerce-info, .woocommerce-message{
+	border-top-color: #1e85be;
     margin-top: 30px;
     color: white;
     background: black;
