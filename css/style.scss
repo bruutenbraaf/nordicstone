@@ -1421,9 +1421,9 @@ ul.products {
 	}
 }
 
-.col-1 {
-	width:100%;
-	max-width: 100%;
+.col-1, .col-2 {
+	width:50%;
+	max-width: 50%;
 }
 
 .woocommerce form .form-row label {
