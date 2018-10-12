@@ -1052,6 +1052,25 @@ ul.products .shop_attributes {
   width: 100%;
   max-width: 100%; }
 
+.woocommerce form .form-row label {
+  width: 100%; }
+
+.woocommerce .info {
+  border-top-color: #1e85be;
+  margin-top: 30px;
+  color: white;
+  background: black;
+  border: 0px; }
+
+.woocommerce .a {
+  color: #fff; }
+
+.woocommerce-info::before {
+  color: #ffffff; }
+
+.woocommerce-input-wrapper {
+  width: 100%; }
+
 @media only screen and (max-width: 1024px) {
   .has_sub a {
     pointer-events: all; }
