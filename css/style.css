@@ -1048,6 +1048,10 @@ ul.products .shop_attributes {
   float: right;
   margin: 0px !important; }
 
+.col-1 {
+  width: 100%;
+  max-width: 100%; }
+
 @media only screen and (max-width: 1024px) {
   .has_sub a {
     pointer-events: all; }
