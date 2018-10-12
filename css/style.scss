@@ -1427,7 +1427,7 @@ ul.products {
 	
 	.has_sub {
 		a {
-			pointer-events: none;
+			pointer-events: all;
 		}
 	}
 	
@@ -1442,9 +1442,10 @@ ul.products {
 				 		margin-top:0px;
 				 		padding:0px;
 					    position: inherit;
-					    visibility: hidden;
-					    display: none;
+					    visibility: visible;
 					    animation:none !important;
+					    background:none;
+					    pointer-events: all;
 					    &:before {
 						    display:none;
 					    }

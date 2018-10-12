@@ -1050,7 +1050,7 @@ ul.products .shop_attributes {
 
 @media only screen and (max-width: 1024px) {
   .has_sub a {
-    pointer-events: none; }
+    pointer-events: all; }
 
   .nav .row .categorie ul li {
     display: inline-block !important; }
@@ -1058,9 +1058,10 @@ ul.products .shop_attributes {
     margin-top: 0px;
     padding: 0px;
     position: inherit;
-    visibility: hidden;
-    display: none;
-    animation: none !important; }
+    visibility: visible;
+    animation: none !important;
+    background: none;
+    pointer-events: all; }
     .nav .row .categorie ul ul:before {
       display: none; }
     .nav .row .categorie ul ul:after {

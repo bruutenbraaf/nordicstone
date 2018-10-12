@@ -87,7 +87,7 @@ var hamburger = $('.hamburger')
 	
 hamburger.click(function() {
   cheese.toggleClass('activated');
-  $( ".nav .row .categorie ul" ).slideToggle(300);
+  $( ".nav .row .categorie > ul" ).slideToggle(300);
   if (cheese.hasClass('activated') === true) {
 	  $( ".cheese div:first-child" ).addClass('hamburgerfirst');
 	  $( ".cheese div:nth-child(2)" ).addClass('hamburgermiddle');
@@ -121,7 +121,6 @@ $(window).scroll(function () {
 
 
  /* GRID LIST TOGGLE */
-    
     
 $(document).ready(function () {
     $('#grid').click(function () {
@@ -183,12 +182,7 @@ $('.less_btn').click(function () {
 
 
 
+$( ".has_sub" ).click(function() { 
+	$("ul", this).slideToggle(300);
+});
 
-if ($(window).width() < 1024) {
-   $('.has_sub').click(function () { 
-	  has_sub
-   });
-}
-else {
-   
-}
