@@ -16,8 +16,10 @@ get_header(); ?>
 		  <?php while ( have_rows( 'carousel', 'option' ) ) : the_row(); ?>
 		  <?php if ( get_row_layout() == 'carousel_item' ) : ?>
 		  	<?php if ( get_sub_field( 'afbeelding' ) ) { ?>
-	    <div class="carousel-item" style="background:url('<?php the_sub_field( 'afbeelding' ); ?>');">
-		    
+		  	<?php $afbeelding = get_sub_field( 'afbeelding' ); ?>
+			<?php if ( $afbeelding ) { ?>
+	    <div class="carousel-item" style="background:url('<?php echo $afbeelding['sizes']['homepage-slide']; ?>');">
+		    <?php } ?>
 		    <div class="container">
 			    <div class="row">
 				    <div class="col-md-12 content_slider" data-0="margin-top:0px; opacity:1;" data-300="opacity:1; margin-top:200px; opacity:0;" data-400="opacity:0;">

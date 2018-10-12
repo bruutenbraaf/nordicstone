@@ -1,4 +1,6 @@
 <?php
+	
+	add_image_size( 'homepage-slide', 1920, 780, true );
 
 
 function cc_mime_types($mimes) {
