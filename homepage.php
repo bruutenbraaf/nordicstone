@@ -151,16 +151,28 @@ get_header(); ?>
 </div>
 </div>
 				
-		<?php elseif ( get_row_layout() == 'uitgelicht_categorie_afbeelding_met_tekst' ) : ?>
-		<?php $link = get_sub_field( 'link' ); ?>
-				<?php if ( $link ) { ?>
-					<a href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?><?php } ?>">		
-			<section id="uitgelicht-categorie" style="background-image:url(<?php $afbeelding = get_sub_field( 'afbeelding' ); ?><?php if ( $afbeelding ) { ?><?php echo $afbeelding['url']; ?><?php } ?>);">
-				<div class="boxed">
-					<?php the_sub_field( 'Tekst' ); ?>
-				</div>
+<?php elseif ( get_row_layout() == 'uitgelicht_categorieen_afbeelding_met_tekst' ) : ?>
+			<?php if ( have_rows( 'uitgelicht_links' ) ) : ?>
+				<?php while ( have_rows( 'uitgelicht_links' ) ) : the_row(); ?>
+				<?php $link = get_sub_field( 'link' ); ?>
+					<?php if ( $link ) { ?>
+						<a href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>"><?php } ?>				
+						<div class="uitgelicht_l" style="background-image:url(<?php $afbeelding = get_sub_field( 'afbeelding' ); ?><?php if ( $afbeelding ) { ?><?php echo $afbeelding['url']; ?><?php } ?>);">
+					<div class="boxed"><?php the_sub_field( 'tekst' ); ?></div>
+				</div></a>
+				<?php endwhile; ?>
+			<?php endif; ?>
+			<?php if ( have_rows( 'uitgelicht_rechts' ) ) : ?>
+				<?php while ( have_rows( 'uitgelicht_rechts' ) ) : the_row(); ?>
+						<?php $link = get_sub_field( 'link' ); ?>
+					<?php if ( $link ) { ?>
+						<a href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>"><?php } ?>				
+						<div class="uitgelicht_l" style="background-image:url(<?php $afbeelding = get_sub_field( 'afbeelding' ); ?><?php if ( $afbeelding ) { ?><?php echo $afbeelding['url']; ?><?php } ?>);">
+					<div class="boxed"><?php the_sub_field( 'tekst' ); ?></div>
+				</div></a>
+				<?php endwhile; ?>
+			<?php endif; ?>
 
-			</section></a>
 		<?php endif; ?>
 	<?php endwhile; ?>
 <?php else: ?>
