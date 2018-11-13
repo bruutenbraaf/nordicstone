@@ -953,12 +953,17 @@ span.woocommerce-Price-amount {
   width: auto !important;
   margin: 0 auto; }
 
+.woocommerce-result-count {
+  padding-right: 10px; }
+
 .gridlist-toggle {
-  float: right; }
+  float: left; }
   .gridlist-toggle a {
     padding: 0px 10px; }
     .gridlist-toggle a:last-child {
       padding-right: 20px; }
+    .gridlist-toggle a:first-child {
+      padding-left: 0px; }
 
 ul.products.grid div[itemprop="description"] {
   display: none; }
