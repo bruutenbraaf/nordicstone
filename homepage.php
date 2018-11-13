@@ -122,7 +122,7 @@ get_header(); ?>
 	            <?php $categorie_ids = get_sub_field( 'categorie' ); ?>      
 			    <?php
 							$args = array(
-							'posts_per_page'   => 4,
+							'posts_per_page'   => 18,
 							'post_type' => 'product',
 							'tax_query' => array(
 								array(
