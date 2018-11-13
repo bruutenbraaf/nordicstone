@@ -109,6 +109,13 @@ input, textarea {
   border: 1px solid #e9e9e9;
   padding: 8px; }
 
+#coupon_code {
+  width: 200px; }
+
+.woocommerce .cart .button, .woocommerce .cart input.button {
+  float: none;
+  padding: 13px; }
+
 .clearfix {
   clear: both; }
 
@@ -1083,6 +1090,15 @@ ul.products .shop_attributes {
   color: white;
   background: black;
   border: 0px; }
+
+.woocommerce .info a, .woocommerce-error a, .woocommerce-info a, .woocommerce-message a {
+  color: #fff; }
+
+.order_review_heading {
+  margin-top: 30px; }
+
+.woocommerce-cart-form {
+  margin-top: 30px; }
 
 .woocommerce .a {
   color: #fff; }
