@@ -104,7 +104,7 @@ body {
     background: black;
     color: white; }
 
-input, textarea {
+input, textarea, select {
   border-radius: 4px;
   border: 1px solid #e9e9e9;
   padding: 8px; }
@@ -1094,7 +1094,7 @@ ul.products .shop_attributes {
 .woocommerce .info a, .woocommerce-error a, .woocommerce-info a, .woocommerce-message a {
   color: #fff; }
 
-.order_review_heading {
+#order_review_heading {
   margin-top: 30px; }
 
 .woocommerce-cart-form {
