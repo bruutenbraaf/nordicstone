@@ -1314,7 +1314,7 @@ span.woocommerce-Price-amount {
 }
 
 .carousel-item .list_items {
-	display: none;
+	display: none !important;
 }
 .gridlist-toggle {
     float: left;

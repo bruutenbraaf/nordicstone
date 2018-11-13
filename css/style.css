@@ -962,7 +962,7 @@ span.woocommerce-Price-amount {
   width: 100%; }
 
 .carousel-item .list_items {
-  display: none; }
+  display: none !important; }
 
 .gridlist-toggle {
   float: left; }
