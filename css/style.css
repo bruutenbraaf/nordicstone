@@ -287,7 +287,7 @@ body {
 
 /* Uigelicht producten homepagina */
 .uitgelicht {
-  padding: 62px 15px; }
+  padding: 62px 15px 0px 15px; }
   .uitgelicht h1 {
     font-weight: bold;
     font-size: 1.4rem;
@@ -401,7 +401,7 @@ body {
 
 /* Uitgelichte categorieën */
 .uitgelichte-cat {
-  padding: 62px 15px; }
+  padding: 62px 15px 0px 15px; }
   .uitgelichte-cat .uitgelicht-groot {
     min-height: 450px;
     background-size: cover !important;
