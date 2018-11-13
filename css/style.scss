@@ -142,10 +142,15 @@ body {
     }
 }
 
-input, textarea, select {
+input, textarea, select, .select2-selection__rendered {
 	border-radius: 4px;
     border: 1px solid #e9e9e9;
     padding: 8px;
+}
+
+.woocommerce .col2-set, .woocommerce-page .col2-set {
+    width: calc(100% + 30px);
+    margin: 0px -15px;
 }
 
 #coupon_code {
