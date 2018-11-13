@@ -941,6 +941,9 @@ span.woocommerce-Price-amount {
   border-radius: 0px;
   padding: 20px 40px; }
 
+.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+  background: #2fd334; }
+
 .woocommerce .quantity .qty {
   width: 6em;
   height: 56px;
