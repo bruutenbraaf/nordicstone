@@ -296,6 +296,9 @@ body {
     letter-spacing: 0.2em;
     text-align: center; }
 
+.related h2 {
+  margin-bottom: 30px; }
+
 /* Uitgelichte producten carousel */
 .carousel-ui {
   list-style: none; }
