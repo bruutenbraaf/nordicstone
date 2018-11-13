@@ -31,12 +31,12 @@ global $product;
 	<ul class="single_list">
 		<li>14 dagen bedenktijd</li>
 		<?php if ( have_rows( 'voordeel' ) ) : ?>
-	<?php while ( have_rows( 'voordeel' ) ) : the_row(); ?>
-		<li><?php the_sub_field( 'voordeel_tekst' ); ?></li>
-	<?php endwhile; ?>
-	<?php else : ?>
-	<?php // no rows found ?>
-<?php endif; ?>
+			<?php while ( have_rows( 'voordeel' ) ) : the_row(); ?>
+				<li><?php the_sub_field( 'voordeel_tekst' ); ?></li>
+			<?php endwhile; ?>
+			<?php else : ?>
+			<?php // no rows found ?>
+		<?php endif; ?>
 	</ul>
 
 <?php the_content(); ?>
