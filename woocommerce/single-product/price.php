@@ -28,16 +28,16 @@ global $product;
 <p class="price"><?php echo wc_price( wc_get_price_including_tax( $product ) ); ?> </p>
 <span class="exl_btw"><?php echo wc_price( wc_get_price_excluding_tax( $product ) ); ?> excl. BTW</span>
 
-<?php if ( have_rows( 'voordeel' ) ) : ?>
 	<ul class="single_list">
 		<li>14 dagen bedenktijd</li>
+		<?php if ( have_rows( 'voordeel' ) ) : ?>
 	<?php while ( have_rows( 'voordeel' ) ) : the_row(); ?>
 		<li><?php the_sub_field( 'voordeel_tekst' ); ?></li>
 	<?php endwhile; ?>
-	</ul>
-<?php else : ?>
+	<?php else : ?>
 	<?php // no rows found ?>
 <?php endif; ?>
+	</ul>
 
 <?php the_content(); ?>
 
