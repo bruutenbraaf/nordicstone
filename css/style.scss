@@ -1306,6 +1306,11 @@ span.woocommerce-Price-amount {
 .woocommerce-result-count {
 	padding-right: 10px;
 }
+
+.woocommerce .products ul, .woocommerce ul.products {
+	display: inline-block;
+	margin-top:15px;
+}
 .gridlist-toggle {
     float: left;
     a {
