@@ -287,6 +287,7 @@ body {
 
 /* Uigelicht producten homepagina */
 .uitgelicht {
+  clear: both;
   padding: 62px 15px 0px 15px; }
   .uitgelicht h1 {
     font-weight: bold;

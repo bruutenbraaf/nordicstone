@@ -107,50 +107,48 @@ get_header(); ?>
 
 <div class="container uitgelicht">
 	<div class="row">
-		<div class="col-md-12">
-			
-			
-	 <a class="ui-prev" href="#uitgelichtslider" role="button" data-slide="prev">
-                <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </a>
-            <a class="ui-next" href="#uitgelichtslider" role="button" data-slide="next">
-                <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </a>
-            <h1><?php the_sub_field( 'titel' ); ?></h1>
-        <div id="uitgelichtslider" class="carousel carousel-ui slide w-100" data-ride="carousel">
-            <div class="carousel-inner w-100" role="listbox">      
-	            <?php $categorie_ids = get_sub_field( 'categorie' ); ?>      
-			    <?php
-							$args = array(
-							'posts_per_page'   => 18,
-							'post_type' => 'product',
-							'tax_query' => array(
-								array(
-								'taxonomy' => 'product_cat',
-								'field' => 'term_id',
-								'terms' => $categorie_ids 
+		<div class="col-md-12">		
+		 	<a class="ui-prev" href="#uitgelichtslider" role="button" data-slide="prev">
+	                <i class="fa fa-angle-down" aria-hidden="true"></i>
+	            </a>
+	            <a class="ui-next" href="#uitgelichtslider" role="button" data-slide="next">
+	                <i class="fa fa-angle-down" aria-hidden="true"></i>
+	            </a>
+	            <h1><?php the_sub_field( 'titel' ); ?></h1>
+	        <div id="uitgelichtslider" class="carousel carousel-ui slide w-100" data-ride="carousel">
+	            <div class="carousel-inner w-100" role="listbox">      
+		            <?php $categorie_ids = get_sub_field( 'categorie' ); ?>      
+				    <?php
+								$args = array(
+								'posts_per_page'   => 18,
+								'post_type' => 'product',
+								'tax_query' => array(
+									array(
+									'taxonomy' => 'product_cat',
+									'field' => 'term_id',
+									'terms' => $categorie_ids 
+									)
 								)
-							)
-							);
-							$query2 = new WP_Query( $args );
-
-							while ( $query2->have_posts() ) : $query2->the_post(); ?>
-			
-			<div class="carousel-item"><a href="<?php echo the_permalink(); ?>">
-			    <div class="product_image" style="background-image:url(<?php the_post_thumbnail_url( $size ); ?>);">
-			    </div>
-			       <span class="title"><?php the_title(); ?></span><br>
-				   <span class="price"><?php woocommerce_get_template( 'loop/price.php' ); ?></span><br>
-			    </a>
-			</div>
-			
-			<?php endwhile; wp_reset_query(); ?>
-            </div>
-         </div>
+								);
+								$query2 = new WP_Query( $args );
+	
+								while ( $query2->have_posts() ) : $query2->the_post(); ?>
+				
+				<div class="carousel-item"><a href="<?php echo the_permalink(); ?>">
+				    <div class="product_image" style="background-image:url(<?php the_post_thumbnail_url( $size ); ?>);">
+				    </div>
+				       <span class="title"><?php the_title(); ?></span><br>
+					   <span class="price"><?php woocommerce_get_template( 'loop/price.php' ); ?></span><br>
+				    </a>
+				</div>
+				
+				<?php endwhile; wp_reset_query(); ?>
+	            </div>
+	         </div>
+		</div>
 	</div>
 </div>
-</div>
-				
+			
 <?php elseif ( get_row_layout() == 'uitgelicht_categorieen_afbeelding_met_tekst' ) : ?>
 			<?php if ( have_rows( 'uitgelicht_links' ) ) : ?>
 				<?php while ( have_rows( 'uitgelicht_links' ) ) : the_row(); ?>
@@ -172,7 +170,8 @@ get_header(); ?>
 				</div></a>
 				<?php endwhile; ?>
 			<?php endif; ?>
-
+			</div>
+			</div>
 		<?php endif; ?>
 	<?php endwhile; ?>
 <?php else: ?>
