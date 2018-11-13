@@ -961,6 +961,9 @@ span.woocommerce-Price-amount {
   margin-top: 15px;
   width: 100%; }
 
+.carousel-item .list_items {
+  display: none; }
+
 .gridlist-toggle {
   float: left; }
   .gridlist-toggle a {
