@@ -1639,6 +1639,8 @@ ul.products {
 #uitgelicht-categorie {
 	height: 70vh;
 	position: relative;
+	background-size: cover;
+	background-position: center center;
 	.boxed {
 		border-radius: 2px;
 	    background: #fff;

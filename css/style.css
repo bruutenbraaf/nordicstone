@@ -1201,7 +1201,9 @@ ul.products .shop_attributes {
 
 #uitgelicht-categorie {
   height: 70vh;
-  position: relative; }
+  position: relative;
+  background-size: cover;
+  background-position: center center; }
   #uitgelicht-categorie .boxed {
     border-radius: 2px;
     background: #fff;
