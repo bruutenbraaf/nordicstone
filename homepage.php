@@ -163,7 +163,7 @@ get_header(); ?>
 		<?php elseif ( get_row_layout() == 'uitgelicht_categorie_afbeelding_met_tekst' ) : ?>
 		<?php $link = get_sub_field( 'link' ); ?>
 				<?php if ( $link ) { ?>
-					<a href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>"><?php echo $link['title']; ?><?php } ?>			
+					<a href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?><?php } ?>">		
 			<section id="uitgelicht-categorie" style="background-image:url(<?php $afbeelding = get_sub_field( 'afbeelding' ); ?><?php if ( $afbeelding ) { ?><?php echo $afbeelding['url']; ?><?php } ?>);">
 				<div class="boxed">
 					<?php the_sub_field( 'Tekst' ); ?>
