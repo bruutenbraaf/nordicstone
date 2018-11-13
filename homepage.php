@@ -110,14 +110,14 @@ get_header(); ?>
 		<div class="col-md-12">
 			
 			
-	 <a class="ui-prev" href="#uitgelichtCarousel" role="button" data-slide="prev">
+	 <a class="ui-prev" href="#uitgelichtslider" role="button" data-slide="prev">
                 <i class="fa fa-angle-down" aria-hidden="true"></i>
             </a>
-            <a class="ui-next" href="#uitgelichtCarousel" role="button" data-slide="next">
+            <a class="ui-next" href="#uitgelichtslider" role="button" data-slide="next">
                 <i class="fa fa-angle-down" aria-hidden="true"></i>
             </a>
             <h1><?php the_sub_field( 'titel' ); ?></h1>
-        <div id="uitgelichtCarousel" class="carousel carousel-ui slide w-100" data-ride="carousel">
+        <div id="uitgelichtslider" class="carousel carousel-ui slide w-100" data-ride="carousel">
             <div class="carousel-inner w-100" role="listbox">      
 	            <?php $categorie_ids = get_sub_field( 'categorie' ); ?>      
 			    <?php
