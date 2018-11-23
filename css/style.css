@@ -1471,6 +1471,12 @@ ul.products .shop_attributes {
       text-decoration: underline; }
 
 @media only screen and (max-width: 766px) {
+  .c-content {
+    order: 1; }
+
+  .sidebar {
+    sidebar: 13; }
+
   .cart_icon .count {
     right: 35%; }
 
