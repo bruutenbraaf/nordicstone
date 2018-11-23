@@ -132,12 +132,12 @@ acf_add_options_page( array(
 ) );
 
 
-function my_wp_nav_menu_args( $args = '' ) {
+function my_wp_nav_menu_args( $args = 'menu_user' ) {
  
 if( is_user_logged_in() ) { 
-    $args['menu'] = 'logged-in';
+    $args['menu_user'] = 'logged-in';
 } else { 
-    $args['menu'] = 'logged-out';
+    $args['menu_user'] = 'logged-out';
 } 
     return $args;
 }
