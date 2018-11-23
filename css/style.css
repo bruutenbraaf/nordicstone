@@ -122,6 +122,9 @@ input, textarea, select {
   float: none;
   padding: 13px; }
 
+.adress_container {
+  padding: 0px; }
+
 .clearfix {
   clear: both; }
 
