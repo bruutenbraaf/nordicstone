@@ -151,6 +151,23 @@ input, textarea, select {
     padding: 8px;
 }
 
+.woocommerce-page {
+	.woocommerce {
+		display: flex;
+		padding: 40px 0px;
+		.woocommerce-MyAccount-navigation {
+			flex:3;
+		}
+		.woocommerce-MyAccount-content {
+			flex:9;
+		}
+	}
+}
+
+.woocommerce-form-login {
+	float:none;
+	clear: all;
+}
 .woocommerce .col2-set, .woocommerce-page .col2-set {
     width: calc(100% + 30px);
     margin: 0px -15px;
