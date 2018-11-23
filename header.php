@@ -92,7 +92,7 @@
 						        
 						        
 					        </a>
-					        <div class="box">
+					        <div class="box user-menu-box">
 						        
 						        <?php wp_nav_menu( $args ); ?>
 						        
@@ -100,7 +100,7 @@
 					    </li>
 					    <li id="two">
 					        <a href="#" class="open cart_icon"><?php get_template_part( 'count', 'index' ); ?></a>
-					        <div class="box">
+					        <div class="box user-cart-box">
 						        
 						        <?php
 								    global $woocommerce;

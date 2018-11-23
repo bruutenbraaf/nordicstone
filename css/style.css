@@ -103,6 +103,8 @@ body {
   body ::selection {
     background: black;
     color: white; }
+  body section {
+    padding: 60px 0px; }
 
 input, textarea, select {
   border-radius: 4px;
@@ -128,7 +130,8 @@ input, textarea, select {
   .nav .row {
     display: flex;
     height: 98px;
-    align-items: center; }
+    align-items: center;
+    padding: 0px 15px; }
     .nav .row .branding img {
       max-width: 100%; }
     .nav .row .categorie ul {
@@ -814,16 +817,6 @@ input, textarea, select {
   min-height: 60px; }
   .box .info {
     white-space: nowrap; }
-  .box:before {
-    content: '';
-    background: #efefef;
-    position: absolute;
-    top: -10px;
-    right: 30px;
-    width: 20px;
-    height: 10px;
-    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
   .box:after {
     content: '';
     width: 50%;
@@ -836,6 +829,50 @@ input, textarea, select {
     -webkit-clip-path: polygon(55% 1%, 77% 49%, 100% 18%, 100% 100%, 0 100%);
     clip-path: polygon(55% 1%, 77% 49%, 100% 18%, 100% 100%, 0 100%);
     z-index: -1; }
+
+.header_search:before {
+  content: '';
+  background: #efefef;
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  width: 20px;
+  height: 10px;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+
+.user-menu-box:before {
+  content: '';
+  background: #efefef;
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  width: 20px;
+  height: 10px;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+
+.user-cart-box {
+  width: fit-content !important;
+  left: 50% !important;
+  margin: 0 auto !important;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transform: translateX(-50%); }
+  .user-cart-box:before {
+    content: '';
+    background: #efefef;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 10px;
+    -webkit-clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    clip-path: polygon(50% 0, 0 100%, 100% 100%); }
 
 .cart_icon .count {
   position: absolute;
@@ -1117,6 +1154,52 @@ ul.products .shop_attributes {
   width: 100%; }
 
 @media only screen and (max-width: 1024px) {
+  .user_menu {
+    background: #000;
+    padding: 15px 0 10px 0;
+    margin: 20px 0 -15px 0;
+    max-width: 100%;
+    width: 100%;
+    flex: 100%; }
+
+  .user-menu-box {
+    left: 0;
+    width: fit-content; }
+
+  .user-menu-box:before {
+    content: '';
+    background: #efefef;
+    position: absolute;
+    top: -10px;
+    left: 40%;
+    width: 20px;
+    height: 10px;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+
+  .user-cart-box:before {
+    content: '';
+    background: #efefef;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 10px;
+    -webkit-clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    clip-path: polygon(50% 0, 0 100%, 100% 100%); }
+
+  .header_search:before {
+    content: '';
+    background: #efefef;
+    position: absolute;
+    top: -10px;
+    right: 40%;
+    width: 20px;
+    height: 10px;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+
   .has_sub a {
     pointer-events: all; }
 
@@ -1139,6 +1222,9 @@ ul.products .shop_attributes {
       display: inline-block;
       border-bottom: 0px; }
 
+  .nav .container {
+    margin: 0;
+    max-width: 100%; }
   .nav .row {
     height: inherit;
     padding: 15px 0px; }
@@ -1160,14 +1246,14 @@ ul.products .shop_attributes {
         right: 0px;
         top: 8px; }
     .nav .row .branding {
-      width: 40%;
+      width: 20%;
       float: left; }
 
   .services {
     display: none; }
 
   .hamburger {
-    width: 60%;
+    width: 80%;
     float: right;
     padding: 0px 15px;
     cursor: pointer; }
@@ -1199,7 +1285,7 @@ ul.products .shop_attributes {
         fill: white; }
 
   .cart_icon .count {
-    right: 27%; }
+    right: 41%; }
 
   .nav-tabs li {
     margin-right: 15px;
@@ -1309,5 +1395,37 @@ ul.products .shop_attributes {
       font-weight: bold;
       margin-top: 10px;
       text-decoration: underline; }
+
+@media only screen and (max-width: 766px) {
+  .cart_icon .count {
+    right: 35%; }
+
+  .nav .row .branding {
+    width: 40%;
+    float: left; }
+  .nav .row .hamburger {
+    width: 60%; }
+
+  .user-menu-box:before {
+    content: '';
+    background: #efefef;
+    position: absolute;
+    top: -10px;
+    left: 42px;
+    width: 20px;
+    height: 10px;
+    -webkit-clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    clip-path: polygon(50% 0, 0 100%, 100% 100%); }
+
+  .header_search:before {
+    content: '';
+    background: #efefef;
+    position: absolute;
+    top: -10px;
+    right: 64px;
+    width: 20px;
+    height: 10px;
+    -webkit-clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    clip-path: polygon(50% 0, 0 100%, 100% 100%); } }
 
 /*# sourceMappingURL=style.css.map */

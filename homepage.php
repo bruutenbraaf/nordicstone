@@ -66,7 +66,7 @@ get_header(); ?>
             <a class="ui-next" href="#uitgelichtCarousel" role="button" data-slide="next">
                 <i class="fa fa-angle-down" aria-hidden="true"></i>
             </a>
-		<h1>Maak je gereed voor een avontuur</h1>
+		<h1><?php the_field( 'titel' ); ?></h1>
         <div id="uitgelichtCarousel" class="carousel carousel-ui slide w-100" data-ride="carousel">
             <div class="carousel-inner w-100" role="listbox">            
 			    <?php
