@@ -187,6 +187,14 @@ input, textarea, select {
 	}
 }
 
+.cart_item {
+	.product-thumbnail {
+		img {
+			max-width: 100px;
+		}
+	}
+}
+
 .woocommerce-MyAccount-content {
 	.woocommerce .info, .woocommerce-error, .woocommerce-info, .woocommerce-message {
 		margin-top:0px;

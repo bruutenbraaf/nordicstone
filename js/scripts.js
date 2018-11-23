@@ -161,6 +161,7 @@ else {
 
 /* WIDGET MEER WEERGEVEN */
 
+/*
 
 if( $('ul.woocommerce-widget-layered-nav-list li').length >= 3 ){ 
 		$( "ul.woocommerce-widget-layered-nav-list li:nth-child(3)" ).nextAll().css({"display":"none"});
@@ -179,6 +180,7 @@ $('.less_btn').click(function () {
 	$('.more_btn').delay(5).css({"display":"inline-block"}).fadeIn(300);
 	$('.less_btn').css({"display":"none"}).fadeOut(300);
 });
+*/
 
 
 

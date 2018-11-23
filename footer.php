@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-3">
-				<?php dynamic_sidebar( 'footer_een' ); ?>
+				<?php wp_nav_menu( array( 'theme_location' => 'service' ) ); ?>
 			</div>
 			<div class="col-md-3">
 				<?php dynamic_sidebar( 'footer_twee' ); ?>
