@@ -1475,7 +1475,7 @@ ul.products .shop_attributes {
     order: 1; }
 
   .sidebar {
-    sidebar: 13; }
+    order: 13; }
 
   .cart_icon .count {
     right: 35%; }
