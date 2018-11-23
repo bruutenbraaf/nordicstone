@@ -12,6 +12,7 @@ add_filter('upload_mimes', 'cc_mime_types');
 add_theme_support( 'title-tag' );
 add_theme_support( 'post-thumbnails' ); 
 add_theme_support( 'custom-logo' );
+
 	
 function register_my_menus() {
   register_nav_menus(
@@ -38,6 +39,24 @@ add_action( 'init', 'register_my_menus' );
 		register_sidebar( array(
 			'name'          => 'Product Sidebar',
 			'id'            => 'product_sidebar',
+			'before_widget' => '<div class="widget">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h2 class="widgettitle">',
+			'after_title'   => '</h2>'
+		) );
+		
+		register_sidebar( array(
+			'name'          => 'Contact',
+			'id'            => 'contact_sidebar',
+			'before_widget' => '<div class="widget">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h2 class="widgettitle">',
+			'after_title'   => '</h2>'
+		) );
+		
+		register_sidebar( array(
+			'name'          => 'Tekst pagina',
+			'id'            => 'content_sidebar',
 			'before_widget' => '<div class="widget">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h2 class="widgettitle">',
