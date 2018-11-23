@@ -94,7 +94,8 @@
 					        </a>
 					        <div class="box user-menu-box">
 						        
-						        <?php wp_nav_menu( $args ); ?>
+<!-- 						        <?php wp_nav_menu( $args ); ?> -->
+								<?php wp_nav_menu( array( 'theme_location' => 'gebruiker-menu' ) ); ?>
 						        
 					        </div>        
 					    </li>

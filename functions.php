@@ -19,6 +19,7 @@ function register_my_menus() {
     array(
       'gebruiker_menu' => __( 'Gebruiker Menu' ),
       'service_menu' => __( 'Service' ),
+      'gebruiker-menu' => __( 'Gebruiker menu' ),
     )
   );
 }
@@ -132,6 +133,7 @@ acf_add_options_page( array(
 ) );
 
 
+/*
 function my_wp_nav_menu_args( $args = 'menu_user' ) {
  
 if( is_user_logged_in() ) { 
@@ -142,6 +144,17 @@ if( is_user_logged_in() ) {
     return $args;
 }
 add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' );
+*/
+
+
+add_filter( 'wp_nav_menu_args', function ( $args )
+{
+if( is_user_logged_in() && $args['theme_location'] === 'gebruiker-menu' ) {
+$args['menu'] = 'logged-in';
+}
+return $args;
+});
+
 
 add_filter( 'woocommerce_subcategory_count_html', 'wcc_hide_category_count' );
 function wcc_hide_category_count() {
