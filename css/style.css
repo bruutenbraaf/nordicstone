@@ -8,7 +8,7 @@
 body, .nav {
   font-family: 'Source Sans Pro', sans-serif; }
 
-.woocommerce-MyAccount-navigation ul li:before, .woocommerce-MyAccount-navigation ul li:hover:before, .widget ul li:before, .widget ul li:hover:before, .nav .row .categorie ul ul li:before, .nav .row .categorie ul ul li:hover:before, .home_carousel .down .fa, .home_carousel .down:hover, .ui-next, .ui-prev, .ui-next:hover, .ui-prev:hover, .cart_pop .button, .cart_pop .button:hover, .box .menu li:before, .box .menu li:hover:before {
+.woocommerce-MyAccount-navigation ul li:before, .woocommerce-MyAccount-navigation ul li:hover:before, .the_content .widget ul li:before, .the_content .widget ul li:hover:before, .nav .row .categorie ul ul li:before, .nav .row .categorie ul ul li:hover:before, .home_carousel .down .fa, .home_carousel .down:hover, .ui-next, .ui-prev, .ui-next:hover, .ui-prev:hover, .cart_pop .button, .cart_pop .button:hover, .box .menu li:before, .box .menu li:hover:before {
   transition-duration: 0.2s;
   animation-duration: 0.2s; }
 
@@ -137,23 +137,31 @@ input, textarea, select {
     .woocommerce-MyAccount-navigation ul li:hover:before {
       left: 2px; }
 
-.widget ul {
-  list-style: none;
-  padding: 0;
-  margin: 0; }
-  .widget ul li {
-    padding-left: 15px;
-    position: relative; }
-    .widget ul li:before {
-      content: '\f105';
-      position: absolute;
-      width: 6px;
-      height: 8px;
-      left: 0;
-      top: 0px;
-      font-family: fontAwesome; }
-    .widget ul li:hover:before {
-      left: 2px; }
+.the_content .widget {
+  margin-bottom: 30px; }
+  .the_content .widget h2 {
+    font-weight: 700;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    padding: 0 0 15px 0; }
+  .the_content .widget ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .the_content .widget ul li {
+      padding-left: 15px;
+      position: relative; }
+      .the_content .widget ul li:before {
+        content: '\f105';
+        position: absolute;
+        width: 6px;
+        height: 8px;
+        left: 0;
+        top: 0px;
+        font-family: fontAwesome; }
+      .the_content .widget ul li:hover:before {
+        left: 2px; }
 
 .cart_item .product-thumbnail img {
   max-width: 100px; }
