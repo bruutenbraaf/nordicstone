@@ -7,7 +7,7 @@ get_header(); ?>
 	<div class="container woocommerce_container the_content">
 		<div class="row">
 			<div class="col-md-4">
-				<?php dynamic_sidebar( 'contat_sidebar' ); ?>
+				<?php dynamic_sidebar( 'contact_sidebar' ); ?>
 			</div>
 			<div class="col-md-8">
 				<?php if ( have_posts() ) : ?>
