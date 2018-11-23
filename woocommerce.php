@@ -8,4 +8,6 @@ get_header(); ?>
 						<?php the_content(); ?>
 					<?php endwhile; ?>
 				<?php endif; ?>
+			</div>
+		</div>
 <?php get_footer(); ?>
