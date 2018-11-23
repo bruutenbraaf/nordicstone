@@ -3,6 +3,7 @@
 Template Name: Content page
 */
 get_header(); ?>
+<section id="content">
 	<div class="container woocommerce_container the_content">
 		<div class="row">
 			<div class="col-md-4">
@@ -17,4 +18,5 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
+</section>
 <?php get_footer(); ?>

@@ -697,7 +697,7 @@ input, textarea, select {
 
 /* Woocommerce Loop */
 .woocommerce_loop {
-  padding: 35px 0px; }
+  padding: 35px 15px; }
   .woocommerce_loop .shop_sidebar {
     font-size: 1em; }
     .woocommerce_loop .shop_sidebar li {
