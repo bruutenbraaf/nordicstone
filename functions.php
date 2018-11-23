@@ -17,8 +17,6 @@ add_theme_support( 'custom-logo' );
 function register_my_menus() {
   register_nav_menus(
     array(
-      'gebruiker_menu' => __( 'Gebruiker Menu' ),
-      'service_menu' => __( 'Service' ),
       'gebruiker-menu' => __( 'Gebruiker menu' ),
     )
   );
