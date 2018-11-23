@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: WooCommerce
+Template Name: Content page
 */
 get_header(); ?>
 	<div class="container woocommerce_container the_content">
