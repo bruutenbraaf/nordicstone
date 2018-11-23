@@ -8,7 +8,7 @@
 body, .nav {
   font-family: 'Source Sans Pro', sans-serif; }
 
-.woocommerce-MyAccount-navigation ul li:before, .woocommerce-MyAccount-navigation ul li:hover:before, .nav .row .categorie ul ul li:before, .nav .row .categorie ul ul li:hover:before, .home_carousel .down .fa, .home_carousel .down:hover, .ui-next, .ui-prev, .ui-next:hover, .ui-prev:hover, .cart_pop .button, .cart_pop .button:hover, .box .menu li:before, .box .menu li:hover:before {
+.woocommerce-MyAccount-navigation ul li:before, .woocommerce-MyAccount-navigation ul li:hover:before, .widget ul li:before, .widget ul li:hover:before, .nav .row .categorie ul ul li:before, .nav .row .categorie ul ul li:hover:before, .home_carousel .down .fa, .home_carousel .down:hover, .ui-next, .ui-prev, .ui-next:hover, .ui-prev:hover, .cart_pop .button, .cart_pop .button:hover, .box .menu li:before, .box .menu li:hover:before {
   transition-duration: 0.2s;
   animation-duration: 0.2s; }
 
@@ -135,6 +135,24 @@ input, textarea, select {
       top: 0px;
       font-family: fontAwesome; }
     .woocommerce-MyAccount-navigation ul li:hover:before {
+      left: 2px; }
+
+.widget ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .widget ul li {
+    padding-left: 15px;
+    position: relative; }
+    .widget ul li:before {
+      content: '\f105';
+      position: absolute;
+      width: 6px;
+      height: 8px;
+      left: 0;
+      top: 0px;
+      font-family: fontAwesome; }
+    .widget ul li:hover:before {
       left: 2px; }
 
 .cart_item .product-thumbnail img {

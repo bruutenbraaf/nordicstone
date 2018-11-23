@@ -187,6 +187,30 @@ input, textarea, select {
 	}
 }
 
+.widget ul {
+	list-style: none;
+	padding:0;
+	margin:0;
+	li {
+		padding-left: 15px;
+		position: relative;
+		&:before {
+			@extend %transition;
+			content: '\f105';
+		    position: absolute;
+		    width: 6px;
+		    height: 8px;
+		    left: 0;
+		    top: 0px;
+		    font-family: fontAwesome;
+		   }
+		&:hover:before {
+			@extend %transition;
+			left:2px;
+		}
+	}
+}
+
 .cart_item {
 	.product-thumbnail {
 		img {
