@@ -6,7 +6,7 @@ get_header(); ?>
 <section id="content">
 	<div class="container woocommerce_container the_content">
 		<div class="row">
-			<div class="col-md-3 order-last">
+			<div class="col-md-3 sidebar">
 				<?php dynamic_sidebar( 'content_sidebar' ); ?>
 			</div>
 			<div class="col-md-9 c-page">
