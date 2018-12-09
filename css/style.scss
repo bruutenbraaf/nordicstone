@@ -1002,12 +1002,12 @@ input, textarea, select {
 	color:#1ad41a;
 }
 
-.list .green {
-	display: none;
+.list li .green {
+	display: none !important;
 }
 
-.list .red {
-	display: none;
+.list li .red {
+	display: none !important;
 }
 
 .woocommerce_loop {

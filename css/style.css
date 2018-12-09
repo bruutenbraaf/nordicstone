@@ -757,6 +757,12 @@ input, textarea, select {
 .green {
   color: #1ad41a; }
 
+.list li .green {
+  display: none !important; }
+
+.list li .red {
+  display: none !important; }
+
 .woocommerce_loop {
   padding: 35px 15px; }
   .woocommerce_loop .shop_sidebar {
