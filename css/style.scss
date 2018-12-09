@@ -170,19 +170,20 @@ input, textarea, select {
 }
 
 .woocommerce-page.columns-3 ul.products li.product, .woocommerce.columns-3 ul.products li.product {
-    width: calc(33.3333333% - 15px);
-    border: 1px solid grey;
+    width: calc(33.3333333% - 10px) !important;
+    border: 1px solid $bordercolor;
     margin: 0px 5px 10px;
     padding: 15px;
     min-height: 280px;
 }
 
 .woocommerce .products ul, .woocommerce ul.products {
+	margin-top:-15px;
     display: inline-block;
     margin-top: -10px;
-    width: calc(100% + 5px);
-    margin-right: inherit;
-    margin-left: -5px;
+    width: calc(100% + 10px) !important;
+    margin-right: inherit !important;
+    margin-left: -5px !important;
 }
 
 .woocommerce-MyAccount-navigation ul {
