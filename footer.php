@@ -19,7 +19,7 @@
 			</div>
 			<div class="col-md-3 easy">
 				
-				<?php if ( have_rows( 'usp' ) ) : ?>
+				<?php if ( have_rows( 'usp', 'option' ) ) : ?>
 				<h2 class="widgettitle"><?php the_field( 'titel', 'option' ); ?></h2>
 					<ul>
 						<?php while ( have_rows( 'usp' ) ) : the_row(); ?>
