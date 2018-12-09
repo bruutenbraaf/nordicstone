@@ -22,7 +22,7 @@
 				<?php if ( have_rows( 'usp', 'option' ) ) : ?>
 				<h2 class="widgettitle"><?php the_field( 'titel', 'option' ); ?></h2>
 					<ul>
-						<?php while ( have_rows( 'usp' ) ) : the_row(); ?>
+						<?php while ( have_rows( 'usp', 'option' ) ) : the_row(); ?>
 							<?php $afbeelding = get_sub_field( 'afbeelding' ); ?>
 							<?php if ( $afbeelding ) { ?>
 								<img src="<?php echo $afbeelding['url']; ?>" alt="<?php echo $afbeelding['alt']; ?>" />
