@@ -19,12 +19,20 @@
 			</div>
 			<div class="col-md-3 easy">
 				
-				<h2 class="widgetitle">Makkelijk online shoppen</h2>
-				<ul>
-					<li><img src="<?php echo esc_url( get_template_directory_uri() )?>/img/truck.svg">Levering in heel Europa</li>
-					<li><img src="<?php echo esc_url( get_template_directory_uri() )?>/img/return.svg">Makkelijk retour</li>
-					<li><img src="<?php echo esc_url( get_template_directory_uri() )?>/img/bedenktijd.svg">14 dagen bedenktijd</li>
-				</ul>
+				<?php if ( have_rows( 'usp' ) ) : ?>
+				<h2 class="widgettitle"><?php the_field( 'titel', 'option' ); ?></h2>
+					<ul>
+						<?php while ( have_rows( 'usp' ) ) : the_row(); ?>
+							<?php $afbeelding = get_sub_field( 'afbeelding' ); ?>
+							<?php if ( $afbeelding ) { ?>
+								<img src="<?php echo $afbeelding['url']; ?>" alt="<?php echo $afbeelding['alt']; ?>" />
+							<?php } ?>
+							<?php the_sub_field( 'titel' ); ?>
+						<?php endwhile; ?>
+					</ul>
+				<?php else : ?>
+					<?php // no rows found ?>
+				<?php endif; ?>
 				
 				<?php dynamic_sidebar( 'footer_vier' ); ?>
 			</div>
