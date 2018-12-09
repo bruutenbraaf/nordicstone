@@ -188,3 +188,12 @@ $( ".has_sub" ).click(function() {
 	$("ul", this).slideToggle(300);
 });
 
+$('.widgettitle').click(function(e) {
+	$(this).toggleClass('widget-show');
+    $(this).next('.widget-content').slideToggle(300);
+});
+
+
+$(document).ready(function() {
+  $('select').niceSelect();
+});

@@ -89,7 +89,10 @@ add_action( 'init', 'register_my_menus' );
 		register_sidebar( array(
 			'name'          => 'Shop Sidebar',
 			'id'            => 'shop_bar',
-
+			'before_widget' => '<div class="widget">',
+			'after_widget'  => '</div></div>',
+			'before_title'  => '<h2 class="widgettitle">',
+			'after_title'   => '</h2><div class="widget-content">'
 		) );	
 								
 }
@@ -182,6 +185,7 @@ add_filter( 'get_terms', 'remove_uncategorized_category', 10, 4 );
 
 
 
+/*
 
   if (!class_exists('WC_List_Grid')) {
 
@@ -281,6 +285,7 @@ add_filter( 'get_terms', 'remove_uncategorized_category', 10, 4 );
   }
   $WC_List_Grid = new WC_List_Grid();
   }
+*/
 
 
 function wpdocs_excerpt_more( $more ) {

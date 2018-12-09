@@ -27,11 +27,26 @@ if ( ! defined( 'ABSPATH' ) ) {
 <div class="container woocommerce_loop">
 	<div class="row">
 		<div class="col-md-3 shop_sidebar">
+			<h2 class="sidebar-main-title">Filteren</h2>
 			<?php dynamic_sidebar( 'shop_bar' ); ?>
 		</div>
 		<div class="col-md-9 the_woocommerce_loop">		
 			
  <h1 class="shop_title"><?php woocommerce_page_title(); ?></h1>
+ 
+<div class="info-bar">
+	
+<div class="grid-list">
+	<div id="grid">
+		<i class="fa fa-th-large" aria-hidden="true"></i>
+	</div>
+	<div id="list">
+		<i class="fa fa-list" aria-hidden="true"></i>
+	</div>
+</div>
+ 
+ 
+ 
 <p class="woocommerce-result-count">
 	
 	<?php
