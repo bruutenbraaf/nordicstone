@@ -510,6 +510,8 @@ input, textarea, select {
   color: #BAB7B7;
   margin-top: 40px;
   background: #000000; }
+  .footer .widgettitle:after {
+    display: none !important; }
   .footer a {
     color: #BAB7B7; }
     .footer a:hover {

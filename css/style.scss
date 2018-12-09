@@ -678,6 +678,11 @@ input, textarea, select {
 	color: $footercolor;
 	margin-top: 40px;
 	background: $maincolor;
+	.widgettitle {
+		&:after {
+			display: none !important;
+		}
+	}
 	a {
 		color:$footerlink;
 		&:hover {
