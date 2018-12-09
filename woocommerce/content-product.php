@@ -47,6 +47,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	do_action( 'woocommerce_before_shop_loop_item_title' );
 	?>
 	</div>
+
 	<?php
 	/**
 	 * woocommerce_shop_loop_item_title hook.
@@ -54,6 +55,20 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 * @hooked woocommerce_template_loop_product_title - 10
 	 */
 	do_action( 'woocommerce_shop_loop_item_title' );
+	?>
+	
+	<?php if($product->get_stock_quantity()>0) {
+    echo 'Available';
+	} else {
+	    if($product->backorders_allowed()) { 
+	        echo 'Backorders allowed';
+	    } else {
+	        echo 'Backorders not allowed';
+	    }
+	}
+	?>
+	
+	<?php
 
 	/**
 	 * woocommerce_after_shop_loop_item_title hook.
