@@ -886,11 +886,11 @@ input, textarea, select {
 .widget-content .price_slider_wrapper .ui-widget-content {
   height: 2px; }
 
-.widgettitle {
+.shop_sidebar .widgettitle {
   cursor: pointer;
   position: relative;
   width: 100%; }
-  .widgettitle:after {
+  .shop_sidebar .widgettitle:after {
     content: '\f105';
     position: absolute;
     width: 6px;

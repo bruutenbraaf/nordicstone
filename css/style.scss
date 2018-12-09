@@ -1162,24 +1162,25 @@ input, textarea, select {
 .widget-content .price_slider_wrapper .ui-widget-content {
 	height:2px;
 }
-
-.widgettitle {
-	cursor: pointer;
-	position: relative;
-	width: 100%;
-	&:after {
-		content: '\f105';
-	    position: absolute;
-	    width: 6px;
-	    height: 8px;
-	    right: 0px;
-	    top: 6px;
-	    transform:rotate(90deg);
-	    font-family: fontAwesome;
-	    -webkit-transition: all .2s ease-in-out;
-		-moz-transition: all .2s ease-in-out;
-		-o-transition: all .2s ease-in-out;
-		transition: all .2s ease-in-out;
+.shop_sidebar {
+	.widgettitle {
+		cursor: pointer;
+		position: relative;
+		width: 100%;
+		&:after {
+			content: '\f105';
+		    position: absolute;
+		    width: 6px;
+		    height: 8px;
+		    right: 0px;
+		    top: 6px;
+		    transform:rotate(90deg);
+		    font-family: fontAwesome;
+		    -webkit-transition: all .2s ease-in-out;
+			-moz-transition: all .2s ease-in-out;
+			-o-transition: all .2s ease-in-out;
+			transition: all .2s ease-in-out;
+		}
 	}
 }
 
