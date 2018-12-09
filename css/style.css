@@ -751,6 +751,12 @@ input, textarea, select {
     float: left;
     margin-left: 10px; }
 
+.red {
+  color: red; }
+
+.green {
+  color: #1ad41a; }
+
 .woocommerce_loop {
   padding: 35px 15px; }
   .woocommerce_loop .shop_sidebar {

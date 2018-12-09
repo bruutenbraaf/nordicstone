@@ -58,12 +58,12 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	?>
 	
 	<?php if($product->get_stock_quantity()>0) {
-    echo 'Available';
+    echo '<span class="green"><i class="fa fa-check-circle-o" aria-hidden="true"></i> Product is op vooraad</span>';
 	} else {
 	    if($product->backorders_allowed()) { 
-	        echo 'Backorders allowed';
+	        echo '<span class="red">Niet op voorraad</span>';
 	    } else {
-	        echo 'Backorders not allowed';
+	        echo '<span class="red">Niet op voorraad</span>';
 	    }
 	}
 	?>
