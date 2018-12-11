@@ -24,6 +24,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <?php wc_print_notices(); ?>
 
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+
 <?php do_action( 'woocommerce_before_customer_login_form' ); ?>
 
 <?php if ( get_option( 'woocommerce_enable_myaccount_registration' ) === 'yes' ) : ?>
@@ -116,5 +120,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 </div>
 <?php endif; ?>
+		</div>
+		<div class="col-md-6">
+			<h2><?php the_field( 'extra_informatie_title', 'option' ); ?></h2>
+			<?php the_field( 'tekst', 'option' ); ?>
+		</div>
+	</div>
+</div>
 
 <?php do_action( 'woocommerce_after_customer_login_form' ); ?>

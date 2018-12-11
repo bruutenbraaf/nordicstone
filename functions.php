@@ -112,6 +112,17 @@ acf_add_options_page( array(
 
 acf_add_options_page( array(
 
+'page_title' 	=> 'Login pagina informatie',
+'menu_title' 	=> 'Login pagina',
+'menu_slug' 	=> 'loginpagina',
+'capability' 	=> 'edit_posts', 
+'icon_url' => 'dashicons-universal-access-alt',
+'position' => 3
+
+) );
+
+acf_add_options_page( array(
+
 'page_title' 	=> 'Carousel',
 'menu_title' 	=> 'Carousel',
 'menu_slug' 	=> 'carousel',

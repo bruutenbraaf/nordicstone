@@ -19,16 +19,19 @@
 			</div>
 			<div class="col-md-3 easy">
 				
+				<h2 class="widgetitle"><?php the_field( 'titel', 'option' ); ?></h2>
+
 				<?php if ( have_rows( 'usp', 'option' ) ) : ?>
-				<h2 class="widgettitle"><?php the_field( 'titel', 'option' ); ?></h2>
 					<ul>
-						<?php while ( have_rows( 'usp', 'option' ) ) : the_row(); ?>
-							<?php $afbeelding = get_sub_field( 'afbeelding' ); ?>
-							<?php if ( $afbeelding ) { ?>
-								<img src="<?php echo $afbeelding['url']; ?>" alt="<?php echo $afbeelding['alt']; ?>" />
-							<?php } ?>
-							<?php the_sub_field( 'titel' ); ?>
-						<?php endwhile; ?>
+					<?php while ( have_rows( 'usp', 'option' ) ) : the_row(); ?>
+					<li>
+						<?php $afbeelding = get_sub_field( 'afbeelding' ); ?>
+						<?php if ( $afbeelding ) { ?>
+							<img src="<?php echo $afbeelding['url']; ?>" alt="<?php echo $afbeelding['alt']; ?>" />
+						<?php } ?>
+						<?php the_sub_field( 'titel' ); ?>
+					</li>
+					<?php endwhile; ?>
 					</ul>
 				<?php else : ?>
 					<?php // no rows found ?>
