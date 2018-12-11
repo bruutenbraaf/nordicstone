@@ -107,16 +107,12 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<a class="ui-prev" href="#uitgelichtslider" role="button">
-				                <i class="fa fa-angle-down" aria-hidden="true"></i>
-				            </a>
-				            <a class="ui-next" href="#uitgelichtslider" role="button">
-				                <i class="fa fa-angle-down" aria-hidden="true"></i>
-				            </a>
-							<h2 class="uitgelicht"><?php the_sub_field( 'titel' ); ?></h2>
+						<div id="<?php the_sub_field( 'id' ); ?>" class="arrows">
+						</div>
+						<h2 class="uitgelicht"><?php the_sub_field( 'titel' ); ?></h2>
 						</div>
 						<div class="col-md-12">
-							<div class="product-slide">
+							<div class="product-slide <?php the_sub_field( 'id' ); ?>">
 								<?php $post_objects = get_sub_field( 'selected_producten' ); ?>
 								<?php if ( $post_objects ): ?>
 									<?php foreach ( $post_objects as $post ):  ?>
@@ -136,52 +132,51 @@
 							</div>
 						</div>
 					</div>
-					<script>
-						jQuery(document).ready(function(){
-							jQuery('.product-slide').slick({
-								infinite: true,
-								slidesToShow: 4,
-								nextArrow: $('.ui-next'),
-								prevArrow: $('.ui-prev'),
-								 responsive: [
-								    {
-								      breakpoint: 1024,
-								      settings: {
-								        slidesToShow: 3,
-								        slidesToScroll: 3,
-								        infinite: true,
-								        nextArrow: $('.ui-next'),
-										prevArrow: $('.ui-prev'),
-								      }
-								    },
-								    {
-								      breakpoint: 600,
-								      settings: {
-								        slidesToShow: 2,
-								        slidesToScroll: 2,
-								        nextArrow: $('.ui-next'),
-										prevArrow: $('.ui-prev'),
-								      }
-								    },
-								    {
-								      breakpoint: 480,
-								      settings: {
-								        slidesToShow: 1,
-								        slidesToScroll: 1,
-								        nextArrow: $('.ui-next'),
-										prevArrow: $('.ui-prev'),
-								      }
-								    }
-								    // You can unslick at a given breakpoint now by adding:
-								    // settings: "unslick"
-								    // instead of a settings object
-								  ]
-							});
-						});
-					</script>
 				</div>
 			</section>	
 			
+			<script>
+				jQuery(document).ready(function(){							
+					jQuery('.<?php the_sub_field( 'id' ); ?>').slick({
+						infinite: true,
+						slidesToShow: 4,
+						appendArrows: $('#<?php the_sub_field( 'id' ); ?>'),
+						 responsive: [
+						    {
+						      breakpoint: 1024,
+						      settings: {
+						        slidesToShow: 3,
+						        slidesToScroll: 3,
+						        infinite: true,
+						        nextArrow: $('.ui-next'),
+								prevArrow: $('.ui-prev'),
+						      }
+						    },
+						    {
+						      breakpoint: 600,
+						      settings: {
+						        slidesToShow: 2,
+						        slidesToScroll: 2,
+						        nextArrow: $('.ui-next'),
+								prevArrow: $('.ui-prev'),
+						      }
+						    },
+						    {
+						      breakpoint: 480,
+						      settings: {
+						        slidesToShow: 1,
+						        slidesToScroll: 1,
+						        nextArrow: $('.ui-next'),
+								prevArrow: $('.ui-prev'),
+						      }
+						    }
+						    // You can unslick at a given breakpoint now by adding:
+						    // settings: "unslick"
+						    // instead of a settings object
+						  ]
+					});
+				});
+		</script>
 	<?php elseif ( get_row_layout() == 'toon_sale_producten' ) : ?>
 	<?php if( get_sub_field( 'sale-producten' ) == 1 ) : ?>
 		<section id="sale-producten">

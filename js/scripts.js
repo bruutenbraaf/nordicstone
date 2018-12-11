@@ -195,5 +195,5 @@ $('.widgettitle').click(function(e) {
 
 
 $(document).ready(function() {
-  $('select').niceSelect();
+  $('.woocommerce_container select').niceSelect();
 });
