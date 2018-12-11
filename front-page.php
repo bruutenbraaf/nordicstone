@@ -133,8 +133,7 @@
 						</div>
 					</div>
 				</div>
-			</section>	
-			
+			</section>				
 			<script>
 				jQuery(document).ready(function(){							
 					jQuery('.<?php the_sub_field( 'id' ); ?>').slick({
