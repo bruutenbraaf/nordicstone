@@ -2416,10 +2416,17 @@ content: '';
 	padding:0;
 }
 
-input[type=text], textarea {
+input[type=text], input[type=email], input[type=tel] {
     overflow: visible;
     -webkit-appearance: none !important;
     border: 1px solid #cdcdcd !important;
     padding: 15px !important;
     height: 44px !important;
 }
+
+ textarea {
+	overflow: visible;
+    -webkit-appearance: none !important;
+    border: 1px solid #cdcdcd !important;
+    padding: 15px !important;
+ }
