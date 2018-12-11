@@ -147,8 +147,6 @@
 						        slidesToShow: 3,
 						        slidesToScroll: 3,
 						        infinite: true,
-						        nextArrow: $('.ui-next'),
-								prevArrow: $('.ui-prev'),
 						      }
 						    },
 						    {
@@ -156,8 +154,6 @@
 						      settings: {
 						        slidesToShow: 2,
 						        slidesToScroll: 2,
-						        nextArrow: $('.ui-next'),
-								prevArrow: $('.ui-prev'),
 						      }
 						    },
 						    {
@@ -165,8 +161,6 @@
 						      settings: {
 						        slidesToShow: 1,
 						        slidesToScroll: 1,
-						        nextArrow: $('.ui-next'),
-								prevArrow: $('.ui-prev'),
 						      }
 						    }
 						    // You can unslick at a given breakpoint now by adding:
@@ -237,8 +231,6 @@
 								        slidesToShow: 3,
 								        slidesToScroll: 3,
 								        infinite: true,
-								       nextArrow: $('.sale-next'),
-									   prevArrow: $('.sale-prev'),
 								      }
 								    },
 								    {
@@ -246,8 +238,6 @@
 								      settings: {
 								        slidesToShow: 2,
 								        slidesToScroll: 2,
-								        nextArrow: $('.sale-next'),
-										prevArrow: $('.sale-prev'),
 								      }
 								    },
 								    {
@@ -255,8 +245,6 @@
 								      settings: {
 								        slidesToShow: 1,
 								        slidesToScroll: 1,
-								        nextArrow: $('.sale-next'),
-										prevArrow: $('.sale-prev'),
 								      }
 								    }
 								    // You can unslick at a given breakpoint now by adding:
