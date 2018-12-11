@@ -32,7 +32,7 @@ get_header(); ?>
 	<?php } else { ?>
 	
 	
-	<div class="container page_container page-content">
+	<div class="container page_container page-content the_content">
 		<div class="row">
 			<div class="col-md-4 sidebar">
 				<?php dynamic_sidebar( 'page_sidebar' ); ?>
