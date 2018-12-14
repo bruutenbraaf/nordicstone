@@ -17,7 +17,10 @@
 					<?php if ( $url ) { ?>
 						<a href="<?php echo $url['url']; ?>" target="<?php echo $url['target']; ?>">
 					<?php } ?>
-					<?php the_sub_field( 'afbeelding' ); ?>
+					<?php $afbeelding = get_sub_field( 'afbeelding' ); ?>
+					<?php if ( $afbeelding ) { ?>
+						<img src="<?php echo $afbeelding['url']; ?>" alt="<?php echo $afbeelding['alt']; ?>" />
+					<?php } ?>
 					<?php $url = get_sub_field( 'url' ); ?>
 					<?php if ( $url ) { ?>
 						</a>
