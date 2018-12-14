@@ -584,6 +584,15 @@ h2.uitgelicht {
     box-sizing: border-box; }
 
 /* Footer */
+.socket {
+  color: #fff;
+  width: 100%;
+  background: #000; }
+  .socket .row {
+    min-height: 60px;
+    display: flex;
+    align-items: center; }
+
 .footer {
   color: #BAB7B7;
   margin-top: 40px;
@@ -604,7 +613,8 @@ h2.uitgelicht {
     font-size: 18px;
     padding-bottom: 10px; }
   .footer .container .row {
-    padding: 52px 15px; }
+    padding-top: 52px;
+    padding-bottom: 52px; }
     .footer .container .row .betaalveilig ul li {
       float: left;
       padding-right: 15px; }

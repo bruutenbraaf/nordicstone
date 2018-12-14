@@ -768,6 +768,17 @@ h2.uitgelicht {
 
 /* Footer */
 
+.socket {
+	color: #fff;
+	width: 100%;
+	background: #000;
+	.row {
+		min-height: 60px;
+		display: flex;
+		align-items: center;
+	}
+}
+
 .footer {
 	color: $footercolor;
 	margin-top: 40px;
@@ -796,7 +807,8 @@ h2.uitgelicht {
 	}
 	.container {
 		.row {
-			padding:52px 15px;
+			padding-top:52px;
+			padding-bottom:52px;
 			.betaalveilig {
 				ul {
 					li {
