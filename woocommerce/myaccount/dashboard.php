@@ -35,6 +35,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <p>
 	<?php the_field( 'tekst_uitloggen', 'option' ); ?>
 	<?php
+	printf(
 		esc_url( wc_get_endpoint_url( 'orders' ) ),
 		esc_url( wc_get_endpoint_url( 'edit-address' ) ),
 		esc_url( wc_get_endpoint_url( 'edit-account' ) )
