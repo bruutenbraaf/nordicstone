@@ -2,12 +2,21 @@
 	
 	add_image_size( 'homepage-slide', 1920, 780, true );
 
-
 function cc_mime_types($mimes) {
   $mimes['svg'] = 'image/svg+xml';
   return $mimes;
 }
 add_filter('upload_mimes', 'cc_mime_types');	
+
+function fix_svg_thumb_display() {
+  echo '
+    td.media-icon img[src$=".svg"], img[src$=".svg"].attachment-post-thumbnail { 
+      width: 100% !important; 
+      height: auto !important; 
+    }
+  ';
+}
+add_action('admin_head', 'fix_svg_thumb_display');
 	
 add_theme_support( 'title-tag' );
 add_theme_support( 'post-thumbnails' ); 
