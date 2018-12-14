@@ -64,7 +64,7 @@
 <div class="socket">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-md-6 left">
 				&copy; <script>document.write(new Date().getFullYear())</script> Nordicstone
 			</div>
 			<div class="col-md-6 right">

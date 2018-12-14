@@ -1935,6 +1935,17 @@ ul.products {
 
 @media only screen and (max-width: 1024px) {
 	
+	.socket {
+		.left {
+			width:50%;
+			float:left;
+		}
+		.right {
+			width:50%;
+			float:left;
+		}
+	}
+	
 	.user_menu {
 	    background: #000;
 	    padding: 15px 0 10px 0;
