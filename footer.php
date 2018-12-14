@@ -8,12 +8,27 @@
 				<?php dynamic_sidebar( 'footer_twee' ); ?>
 			</div>
 			<div class="col-md-3 betaalveilig">
-				<h2 class="widgetitle">Veilig betalen</h2>
-				<ul>
-					<li><img src="<?php echo esc_url( get_template_directory_uri() )?>/img/ideal.svg"></li>
-					<li><img src="<?php echo esc_url( get_template_directory_uri() )?>/img/paypal.svg"></li>
-				</ul>
+				<h2 class="widgetitle"><?php the_field( 'titel', 'option' ); ?></h2>
 				
+				<?php if ( have_rows( 'betaalmogelijkheid', 'option' ) ) : ?>
+				<ul>
+				<?php while ( have_rows( 'betaalmogelijkheid', 'option' ) ) : the_row(); ?>
+					<li><?php $url = get_sub_field( 'url' ); ?>
+					<?php if ( $url ) { ?>
+						<a href="<?php echo $url['url']; ?>" target="<?php echo $url['target']; ?>">
+					<?php } ?>
+					<?php the_sub_field( 'afbeelding' ); ?>
+					<?php $url = get_sub_field( 'url' ); ?>
+					<?php if ( $url ) { ?>
+						</a>
+					<?php } ?>
+					</li>
+				<?php endwhile; ?>
+				</ul>
+			<?php else : ?>
+				<?php // no rows found ?>
+			<?php endif; ?>
+								
 				<?php dynamic_sidebar( 'footer_drie' ); ?>
 				
 			</div>
