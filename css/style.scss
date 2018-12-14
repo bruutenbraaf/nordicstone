@@ -248,6 +248,15 @@ input, textarea, select {
 	}
 }
 
+.woocommerce-info a:hover {
+	color:#bababa !important;
+}
+
+#ship-to-different-address {
+	font-size: 16px;
+    font-weight: bold;
+}
+
 .woocommerce-form-login {
 	float:none;
 	clear: all;
@@ -2222,7 +2231,26 @@ content: '';
 	}
 }
 
-@media only screen and (max-width: 766px) { 
+@media only screen and (max-width: 766px) {
+	
+	.user_menu ul li svg {
+	    max-height: 20px;
+	    fill: #fff;
+	} 
+	
+	.woocommerce form .form-row {
+	    padding: 3px;
+	    margin: 0 0 6px;
+	    width: 100%;
+	}
+	
+	#coupon_code {
+	    width: 100%;
+	}
+	
+	.coupon .button {
+		width: 100%;
+	}
 	
 	.woocommerce .col2-set .col-1, .woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-1, .woocommerce-page .col2-set .col-2 {
 	    float: none;

@@ -115,7 +115,7 @@
 								        } 
 								?>
 								
-								<span class="sub_cart_total">Totaal:</span> <?php echo $woocommerce->cart->get_cart_total(); ?>
+								<span class="sub_cart_total">Totaal:</span> <?php echo $woocommerce->cart->get_total(); ?>
 								<a href="<?php echo get_permalink( wc_get_page_id( 'cart' ) ); ?>" class="button">Afrekenen</a>
 						        
 					        </div>
