@@ -33,7 +33,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?></h2>
 
 <p>
-	<?php the_field( 'tekst', 'option' ); ?>
+	<?php the_field( 'tekst_uitloggen', 'option' ); ?>
 	<?php
 		esc_url( wc_get_endpoint_url( 'orders' ) ),
 		esc_url( wc_get_endpoint_url( 'edit-address' ) ),
