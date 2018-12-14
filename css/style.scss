@@ -798,8 +798,15 @@ h2.uitgelicht {
 		.row {
 			padding:52px 15px;
 			.betaalveilig {
+				ul {
+					li {
+						float: left;
+						padding-right: 10px;
+					}
+				}
 				img {
 					padding-bottom:10px;
+					max-width: 40px;
 				}
 			}
 			.easy {

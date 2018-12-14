@@ -605,8 +605,12 @@ h2.uitgelicht {
     padding-bottom: 10px; }
   .footer .container .row {
     padding: 52px 15px; }
+    .footer .container .row .betaalveilig ul li {
+      float: left;
+      padding-right: 10px; }
     .footer .container .row .betaalveilig img {
-      padding-bottom: 10px; }
+      padding-bottom: 10px;
+      max-width: 40px; }
     .footer .container .row .easy li {
       padding-bottom: 10px; }
     .footer .container .row .easy img {
