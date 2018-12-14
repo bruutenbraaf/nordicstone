@@ -1936,15 +1936,17 @@ ul.products {
 @media only screen and (max-width: 1024px) {
 	
 	.socket {
-		.row {
-			.left {
-				width:50%;
-				float:left;
-			}
-			.right {
-				text-align: left;
-				width:50%;
-				float:left;
+		.container {
+			.row {
+				.left {
+					width:50%;
+					float:left;
+				}
+				.right {
+					text-align: left;
+					width:50%;
+					float:left;
+				}
 			}
 		}
 	}

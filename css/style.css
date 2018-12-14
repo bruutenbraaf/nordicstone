@@ -1461,10 +1461,10 @@ ul.products .shop_attributes {
   color: #cccccc !important; }
 
 @media only screen and (max-width: 1024px) {
-  .socket .row .left {
+  .socket .container .row .left {
     width: 50%;
     float: left; }
-  .socket .row .right {
+  .socket .container .row .right {
     text-align: left;
     width: 50%;
     float: left; }
