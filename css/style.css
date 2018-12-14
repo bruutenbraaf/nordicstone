@@ -1441,6 +1441,9 @@ ul.products .shop_attributes {
 .woocommerce-input-wrapper {
   width: 100%; }
 
+.woocommerce .info a:hover, .woocommerce-error a:hover, .woocommerce-info a:hover, .woocommerce-message a:hover {
+  color: #cccccc !important; }
+
 @media only screen and (max-width: 1024px) {
   .user_menu {
     background: #000;
