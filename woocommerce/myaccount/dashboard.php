@@ -32,9 +32,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	);
 ?></h2>
 
-<p><?php
-	printf(
-		__( 'From your account dashboard you can view your <a href="%1$s">recent orders</a>, manage your <a href="%2$s">shipping and billing addresses</a> and <a href="%3$s">edit your password and account details</a>.', 'woocommerce' ),
+<p>
+	<?php the_field( 'tekst', 'option' ); ?>
+	<?php
 		esc_url( wc_get_endpoint_url( 'orders' ) ),
 		esc_url( wc_get_endpoint_url( 'edit-address' ) ),
 		esc_url( wc_get_endpoint_url( 'edit-account' ) )

@@ -1684,12 +1684,16 @@ ul.products .shop_attributes {
       margin-top: 10px;
       text-decoration: underline; }
 
+.woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce ul.products li.product .woocommerce-loop-product__title, .woocommerce ul.products li.product h3 {
+  padding: 10px 0 0 0;
+  letter-spacing: 0.5px; }
+
 @media only screen and (max-width: 766px) {
   .wc-forward {
-    width: 100%;
-    background: #92af00;
-    text-align: center;
-    border-radius: 2px; }
+    width: 100% !important;
+    background: #92af00 !important;
+    text-align: center !important;
+    border-radius: 2px !important; }
 
   .user_menu ul li svg {
     max-height: 20px;
