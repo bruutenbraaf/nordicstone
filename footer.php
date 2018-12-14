@@ -67,7 +67,7 @@
 			<div class="col-md-6">
 				&copy; <script>document.write(new Date().getFullYear())</script> Nordicstone
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-6 right">
 				<?php if ( get_field( 'hartje_tonen', 'option' ) == 1 ) : ?>
 				 	<a href="https://bruutenbraaf.nl" target="blank" alt="Gemaakt met liefde door Bruut & Braaf">&#x2764;</a>
 				<?php else:?>

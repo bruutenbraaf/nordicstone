@@ -593,6 +593,9 @@ h2.uitgelicht {
     display: flex;
     align-items: center; }
 
+.right {
+  text-align: right; }
+
 .footer {
   color: #BAB7B7;
   margin-top: 40px;
