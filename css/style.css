@@ -1685,6 +1685,12 @@ ul.products .shop_attributes {
       text-decoration: underline; }
 
 @media only screen and (max-width: 766px) {
+  .wc-forward {
+    width: 100%;
+    background: #92af00;
+    text-align: center;
+    border-radius: 2px; }
+
   .user_menu ul li svg {
     max-height: 20px;
     fill: #fff; }
@@ -1695,7 +1701,7 @@ ul.products .shop_attributes {
     width: 100%; }
 
   #coupon_code {
-    width: 100%; }
+    width: 100% !important; }
 
   .coupon .button {
     width: 100%; }
