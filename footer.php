@@ -8,7 +8,7 @@
 				<?php dynamic_sidebar( 'footer_twee' ); ?>
 			</div>
 			<div class="col-md-3 betaalveilig">
-				<h2 class="widgetitle"><?php the_field( 'titel', 'option' ); ?></h2>
+				<h2 class="widgetitle"><?php the_field( 'titel_betalen', 'option' ); ?></h2>
 				
 				<?php if ( have_rows( 'betaalmogelijkheid', 'option' ) ) : ?>
 				<ul>
