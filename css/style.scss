@@ -187,7 +187,6 @@ ul.products li {
     transition: all .2s ease-in-out;
 }
 .woocommerce ul.products li.product a:hover {
-	zoom: 1.1;
     box-shadow: 2px 2px 16px rgba(0,0,0,0.2);
     padding: 15px;
     width: 100%;
@@ -195,6 +194,9 @@ ul.products li {
     z-index: 555;
     position: absolute;
     background: white;
+    img {
+	    zoom: 1.4;
+    }
 }
 .woocommerce-MyAccount-navigation ul {
 	list-style: none;
@@ -2498,7 +2500,7 @@ content: '';
     .product-image-home {
 	    width: 100%;
 	    height: 250px;
-	    background-size: contain;
+	    background-size: 80%;
 	    background-repeat: no-repeat;
 	    background-position: center center;
     }
