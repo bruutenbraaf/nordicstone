@@ -121,6 +121,26 @@ input, textarea, select {
   font-size: 600;
   color: #2b2b2b; }
 
+ul.products li {
+  position: relative; }
+
+.woocommerce ul.products li.product a {
+  display: block;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
+
+.woocommerce ul.products li.product a:hover {
+  zoom: 1.1;
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  width: 100%;
+  display: block;
+  z-index: 555;
+  position: absolute;
+  background: white; }
+
 .woocommerce-MyAccount-navigation ul {
   list-style: none;
   padding: 0;
