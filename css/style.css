@@ -889,6 +889,10 @@ h2.uitgelicht {
 .woocommerce_loop {
   padding: 35px 15px; }
   .woocommerce_loop .shop_sidebar {
+    font-size: 1em;
+    display: inline-table;
+    position: sticky;
+    top: 50px;
     font-size: 1em; }
     .woocommerce_loop .shop_sidebar li {
       list-style: none; }

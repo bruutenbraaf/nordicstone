@@ -1164,6 +1164,10 @@ h2.uitgelicht {
 	padding: 35px 15px;
 	.shop_sidebar {
 		font-size: 1em;
+	    display: inline-table;
+	    position: sticky;
+	    top: 50px;
+		font-size: 1em;
 		li {
 			list-style: none;
 			h2 {
