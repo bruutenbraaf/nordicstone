@@ -192,8 +192,8 @@ ul.products li {
 .checkout_container .woocommerce {
   padding-top: 30px; }
 
-.woocommerce-customer-details, .woocommerce-order-details {
-  padding: 20px 0px; }
+section.woocommerce-customer-details, section.woocommerce-order-details {
+  padding: 20px 0px !important; }
 
 .woocommerce-MyAccount-content .woocommerce .info, .woocommerce-MyAccount-content .woocommerce-error, .woocommerce-MyAccount-content .woocommerce-info, .woocommerce-MyAccount-content .woocommerce-message {
   margin-top: 0px; }
