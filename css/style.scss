@@ -265,12 +265,12 @@ ul.products li {
 	}
 }
 
-.checkout_container .woocommerce {
-	padding-top:30px;
+.woocommerce ul.order_details {
+	padding: 0px;
 }
 
-section.woocommerce-customer-details, section.woocommerce-order-details {
-	padding: 20px 0px !important;
+.checkout_container .woocommerce {
+	padding-top:30px;
 }
 
 .woocommerce-MyAccount-content {

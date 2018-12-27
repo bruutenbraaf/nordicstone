@@ -189,11 +189,11 @@ ul.products li {
 .cart_item .product-thumbnail img {
   max-width: 100px; }
 
+.woocommerce ul.order_details {
+  padding: 0px; }
+
 .checkout_container .woocommerce {
   padding-top: 30px; }
-
-section.woocommerce-customer-details, section.woocommerce-order-details {
-  padding: 20px 0px !important; }
 
 .woocommerce-MyAccount-content .woocommerce .info, .woocommerce-MyAccount-content .woocommerce-error, .woocommerce-MyAccount-content .woocommerce-info, .woocommerce-MyAccount-content .woocommerce-message {
   margin-top: 0px; }
