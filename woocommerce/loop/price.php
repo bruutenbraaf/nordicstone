@@ -24,7 +24,7 @@ global $product;
 ?>
 <div class="grid_info">
 	<?php if ( $price_html = $product->get_price_html() ) : ?>
-		<span class="incl_price"><?php echo $price_html; ?></span>
+		<span class="incl_price"><?php echo wc_price( wc_get_price_including_tax( $product ) ); ?></span>
 	<?php endif; ?>
 </div>
 
