@@ -15,7 +15,10 @@
 				    <div class="col-md-12 content_slider" data-0="margin-top:0px; opacity:1;" data-300="opacity:1; margin-top:200px; opacity:0;" data-400="opacity:0;">
 					    <h1 style="color:<?php the_sub_field( 'tekst_kleur' ); ?>;"><?php the_sub_field( 'titel' ); ?></h1>
 					    <h3 style="color:<?php the_sub_field( 'tekst_kleur' ); ?>;"><?php the_sub_field( 'ondertitel' ); ?></h3>
-					    <a class="button" href="<?php the_sub_field( 'Knop link' ); ?>"><?php the_sub_field( 'knop_tekst' ); ?></a>
+					    <?php $knop_link = get_sub_field( 'knop_link' ); ?>
+						<?php if ( $knop_link ) { ?>
+							<a class="button" href="<?php echo $knop_link['url']; ?>" target="<?php echo $knop_link['target']; ?>"><?php echo $knop_link['title']; ?></a>
+						<?php } ?>
 				    </div>
 			    </div>
 		    </div>
