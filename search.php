@@ -18,7 +18,7 @@
 					<?php echo $wp_query->found_posts;?> <?php _e('Resultaten','convident-theme'); ?>
 				<?php } ?>
 				</div>
-				<?php $current_page = max( 1, get_query_var('paged') ); ?>
+				<?php $current_page = max( 8, get_query_var('paged') ); ?>
 				<div class="topbar-search-header-right">
 					<?php _e('Pagina ','convident-theme'); ?><?php echo $current_page;?><?php _e(' van de ','convident-theme'); ?><?php echo $wp_query->max_num_pages; ?> <?php _e('paginas','convident-theme'); ?>
 				</div>

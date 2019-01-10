@@ -173,6 +173,8 @@
 					});
 				});
 		</script>
+	<?php elseif ( get_row_layout() == 'full_width_tekst' ) : ?>
+			<?php the_sub_field( 'content' ); ?>
 	<?php elseif ( get_row_layout() == 'toon_sale_producten' ) : ?>
 	<?php if( get_sub_field( 'sale-producten' ) == 1 ) : ?>
 		<section id="sale-producten">
