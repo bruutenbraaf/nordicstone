@@ -97,6 +97,9 @@ body {
   body section {
     padding: 60px 0px; }
 
+.archive-text p {
+  font-size: 14px; }
+
 section {
   clear: both; }
 
